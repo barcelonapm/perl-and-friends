@@ -20,3 +20,14 @@ span.fit iframe {
 #banner h2 .principal {
   font-size: 1.5em;
 }
+
+@media screen and (max-width: 736px) {
+  #banner h2 {
+    text-transform: none;
+    font-size: 1.6em;
+  }
+  #banner h2 .principal {
+    font-size: 1.2em;
+  }
+}
+
