@@ -1,0 +1,22 @@
+section.special {
+  text-align: justify;
+}
+
+span.fit iframe {
+  width: 100%;
+  margin-bottom: -9px;
+}
+
+.icons {
+  text-align: center;
+}
+
+#banner h2 {
+  text-transform: none;
+  font-size: 3em;
+  margin-bottom: 120px;
+}
+
+#banner h2 .principal {
+  font-size: 1.5em;
+}
