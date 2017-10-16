@@ -10,7 +10,8 @@
   </head>
   <body>
     <script>
-       window.location = window.location.pathname.replace(/\/talks\//,'#/talks/').replace(/.html$/,"");
+       var  to =  window.location.pathname.replace(/.html$/,"")       
+       window.location = to.replace(/\/talks\//,'#/talks/');
     </script>
   </body>
 </html>
