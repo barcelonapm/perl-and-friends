@@ -11,6 +11,11 @@ span.fit iframe {
   text-align: center;
 }
 
+.major b.block {
+  opacity: 0.8;
+  font-size: 1.2em;
+}
+
 #banner h2 {
   text-transform: none;
   font-size: 3em;
