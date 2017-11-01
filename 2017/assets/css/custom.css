@@ -64,3 +64,17 @@ span.fit iframe {
 .features li:nth-child(21n + 18) { background-color: rgba(0, 0, 0, 0.105); }
 .features li:nth-child(21n + 19) { background-color: rgba(0, 0, 0, 0.07); }
 .features li:nth-child(21n + 20) { background-color: rgba(0, 0, 0, 0.035); }
+
+.features li.cancelled {
+  background-color: #f38272;
+  color: white;
+}
+
+.features li.cancelled h2 {
+  color: #8d1c0c;
+  margin-top: -4px;
+}
+
+.features li.cancelled::before {
+  color: #8d1c0c;
+}
