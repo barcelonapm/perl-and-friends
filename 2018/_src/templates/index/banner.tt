@@ -1,0 +1,31 @@
+<section id="banner">
+  <div class="inner">
+    <h2>
+      <div class="principal">Barcelona</div>
+      Perl & Friends
+    </h2>
+
+    <h3>[% conference.date %]</h3>
+
+    <ul class="actions">
+      [% IF conference.registration_open == 'true' %]
+        <li>
+          <a
+            href="[% conference.registration_url %]"
+            target="_blank"
+            class="button fit special"
+          >Register</a>
+        </li>
+      [% END %]
+      [% IF conference.call_for_papers_open == 'true' %]
+        <li>
+          <a
+            href="[% conference.call_for_papers_url %]"
+            target="_blank"
+            class="button fit"
+          >Submit a talk</a>
+        </li>
+      [% END %]
+    </ul>
+  </div>
+</section>
