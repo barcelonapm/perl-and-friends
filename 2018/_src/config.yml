@@ -2,16 +2,260 @@ conference:
   name: 'Barcelona Perl & Friends 2018'
   date: 'Saturday 10 Nov 2018'
   url: 'http://friends.barcelona.pm/2018/'
-  registration_open: false
-  registration_url:
-  call_for_papers_open: false
-  call_for_papers_url:
-  talks_open: false
-  schedule_open: false
+  registration_open: true
+  registration_url: 'https://goo.gl/forms/Q4oDujaF5i8sjJ7g2'
+  call_for_papers_open: true
+  call_for_papers_url: 'https://goo.gl/forms/gSQXo4yMkoOI2i7q1'
+  talks_open: true
+  schedule_open: true
   finished: false
 
 venue:
+  name: 'CAPSiDE offices'
+  url: 'https://capside.com'
+  map_url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11973.793882743914!2d2.16937!3d41.386066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60a6240b19be359b!2sCAPSiDE!5e0!3m2!1sca!2ses!4v1473529872313'
+  lunch_map_url: 'https://goo.gl/rECGRD'
+  rooms:
+    - name: '/lib'
+    - name: '/bin'
 
 events:
+  - name: 'Registration'
+    time: 09:00
+    duration: 30
+  - name: 'Morning Break'
+    time: 11:00
+    duration: 30
+  - name: 'Lunch'
+    time: 13:00
+    duration: 90
+  - name: 'Afternoon Break'
+    time: 16:30
+    duration: 30
 
 talks:
+  - name: 'Opening'
+    time: 09:30
+    duration: 20
+    accepted: true
+    room: 0
+  - author: 'Sue Spence'
+    name: 'Spiders, Gophers & Butterflies'
+    slug: 'spiders-gophers-and-butterflies'
+    description: >
+      A little Go vs Perl 6 concurrency
+    icon: 'fa-random'
+    duration: 20
+    accepted: true
+    room: 0
+    time: 11:30
+  - author: 'Francesc Guasch'
+    name: 'Ravada VDI'
+    slug: 'ravada-vdi'
+    description: >
+      Ravada is a free, easy to use Virtual Desktop solution. I will show
+      its features, how it works and what are the installation requirements.
+    url: 'http://ravada.upc.edu'
+    icon: 'fa-desktop'
+    duration: 20
+    accepted: true
+    room: 0
+    time: 17:30
+  - author: 'Loïc Prieto'
+    name: 'MooseX::DIC Type-Constrained Dependency Injection'
+    slug: 'moosex-dic-type-constrained-dependency-injection'
+    description: >
+      A talk about Dependency Injection based on "interfaces" for Perl, with
+      the use of MooseX::DIC, a library I created for this task. Along the way,
+      I will present the benefits of using a Dependency Injection in your
+      application.
+    url: 'http://docs.moosex-dic.org'
+    icon: 'fa-bullseye'
+    duration: 20
+    accepted: true
+    room: 1
+    time: 11:30
+  - author: 'Pau Cervera i Badia'
+    name: 'Building a markdown parser only with functions'
+    slug: 'building-a-markdown-parser-only-with-functions'
+    description: >
+      We show how to build a nontrivial parser using a functional language
+      such as clojure or F# or Haskell. The talk is example & test driven and
+      starts with the basics: parsing a single character and growing the parser
+      by layering abstraction levels on top of this simple construct. Special
+      emphasis is on the fact that no need for mutable variables or state is
+      needed.
+    icon: 'fa-clone'
+    duration: 50
+    accepted: true
+    room: 1
+    time: 10:00
+  - author: 'Jose Luis Perez Diez'
+    name: 'Luser Hacking survival kit'
+    slug: 'luser-hacking-survival-kit'
+    description: >
+      Just presenting some tools and tips that can allow you to program in
+      your locked M$ workstation and never touch BASIC.
+    icon: 'fa-windows'
+    duration: 20
+    accepted: true
+    room: 1
+    time: 16:00
+  - author: 'Xavier Noria'
+    name: 'A Tour of the Elixir Source Code'
+    slug: 'a-tour-of-the-elixir-source-code'
+    description: >
+      In this talk we are going to have a look at the Elixir source code to
+      understand its implementation.
+    icon: 'fa-flask'
+    duration: 50
+    accepted: true
+    room: 0
+    time: 14:30
+  - author: 'Oriol Soriano Vila'
+    name: 'CloudDeploy: perl-flavoured Infra-as-Code'
+    slug: 'clouddeploy-perl-flavoured-infra-as-code'
+    description: >
+      CloudDeploy is a 100% perl-written toolkit for managing infrastructure
+      as Moose classes and deploying it in an automated manner to AWS (only
+      to AWS; at least, as of now).  But it is also more than that: it
+      provides a CLI to deploy, a CLI utility to manage images, functionality
+      to calculate 'diffs' between versions of the same stack, etc.
+
+
+      At CAPSiDE we have been managing infrastructure for more than 15 years.
+      The experience we have earned along the way has been bundled into this
+      tool that has just been open sourced and made available to our
+      community. We use CloudDeploy daily and we heavily rely on it since the
+      project inception in 2013.
+    icon: 'fa-sitemap'
+    duration: 50
+    accepted: true
+    room: 0
+    time: 12:00
+  - author: 'Diego Kuperman'
+    name: 'A bag of sweets with mojo'
+    slug: 'a-bag-of-sweets-with-mojo'
+    description: >
+      Anyone knows about Mojolicious web framework and many also knows some
+      of the modules that comes with it, like the Mojo::UserAgent and
+      Mojo::DOM.
+      What not that many people know is that inside the bag, there is lots
+      of other more general purpose modules with the same sweety interface
+      we know and love. In this talk I'll be exploring, thru examples, all
+      the non web related modules that comes inside the Mojolicious package.
+    icon: 'fa-heart'
+    duration: 50
+    accepted: true
+    room: 0
+    time: 15:30
+  - author: 'Jose Luis Martinez'
+    name: 'Volar a la nube: consejos para tu viaje'
+    slug: 'volar-a-la-nube-consejos-para-tu-viaje'
+    description: >
+      Una charla sobre cosas que te ayudarán a hacer tu viaje a la nube un
+      placer.
+    icon: 'fa-cloud'
+    duration: 50
+    accepted: true
+    room: 0
+    time: 10:00
+  - author: 'Ed Freyfogle'
+    name: 'Life inside a Perl-using, developer-focused, SaaS business'
+    slug: 'life-inside-a-perl-using-developer-focused-saas-business'
+    description: >
+      I'm one of the makers of the OpenCage Geocoder, a geocoding API built in
+      Perl. My talk will focus on the challenges and pleasures behind a SaaS
+      business targeting software developers. I'll look at some of the tools
+      and services we use, and the challenges of being a distributed team.
+    icon: 'fa-street-view'
+    duration: 50
+    accepted: true
+    room: 1
+    time: 14:30
+  - author: 'Cristóbal García'
+    name: 'Robust code in dynamic languages: the Clojure approach'
+    slug: 'robust-code-in-dynamic-languages-the-clojure-approach'
+    description: >
+      Dynamic languages have a reputation of paying a high price for his
+      flexibility. The absence of a type checker may make it more difficult
+      to spot subtle bugs as the business rules or data model evolves.  To
+      avoid such risks, one of the potential approaches we can take is to
+      increase our test coverage. Unfortunately, creating more test cases is
+      not a silver bullet. As any other code, tests need to be created and
+      managed.
+
+
+      In this talk, we will explore the clojure.spec framework, the response
+      from the clojure community to the challenges above. Once we describe
+      (specify) the valid shapes our data can take, the toolkit, among
+      other things, enables us to use generative testing to manage a large
+      number of cases along with automated data validation for everyday use.
+    icon: 'fa-check'
+    duration: 50
+    accepted: true
+    room: 1
+    time: 12:00
+  - author: 'Toni Hermoso Pulido'
+    name: 'Wikipedia and Wikidata data access with Perl'
+    slug: 'wikipedia-and-wikidata-data-access-with-perl'
+    description: >
+      In this short talk we would introduce some popular and convenient
+      approaches for interacting with Wikipedia and Wikidata by using Perl.
+
+
+      We would learn how to query the available API and SPARQL endpoints,
+      create simple bots and import data.
+    icon: 'fa-wikipedia-w'
+    duration: 20
+    accepted: true
+    room: 1
+    time: 17:00
+  - author: 'Salvador Fandiño'
+    name: 'Empaquetando aplicaciones Perl para Windows'
+    slug: 'empaquetando-aplicaciones-perl-para-windows'
+    description: >
+      Esta charla va sobre mi nuevo módulo Win32::Packer que permite crear
+      fácilmente instaladores para Windows de aplicaciones Perl con todas sus
+      dependencias en formato MSI.
+    icon: 'fa-truck'
+    duration: 20
+    accepted: true
+    room: 1
+    time: 15:30
+  - author: 'Alex Fernández'
+    name: 'Code Your Future - Escuela de programación para refugiados'
+    slug: 'code-your-future'
+    description: >
+      CodeYourFuture, ubicada en Gran Bretaña, es la primera y única escuela
+      de programación que tiene como finalidad enseñar a los refugiados a
+      programar. La mitad de los estudiantes vienen de Siria. Otros vienen de
+      Uganda, Etiopía, Afganistán y otro es oficialmente reconocido como sin
+      estado por el gobierno de Gran Bretaña. Ninguno puede volver a su hogar
+      ni a sus vidas anteriores y aprenden a programar con el fin de encontrar
+      un trabajo estable en Gran Bretaña. Esperamos que después de seis meses,
+      cada estudiante tenga los suficientes conocimientos de programación para
+      encontrar un trabajo como desarrollador web.
+
+      ¿Quieres ayudarnos a crear una comunidad en Barcelona?
+    icon: 'fa-code-fork'
+    duration: 20
+    accepted: true
+    room: 0
+    time: 17:00
+  - author: 'Manuel Rivero'
+    name: 'Native and browser SPA versions using re-frame, ClojureScript and ReactNative'
+    slug: 'native-and-browser-spa-versions'
+    description: >
+      We'll talk about what we learned developing the browser and native
+      versions of a SPA, that share 90 sth % of their code using React and
+      ReactNative and about the advantages of using a functional language
+      like ClojureScript combined with the re-frame framework which has an
+      architecture similar to Redux but with great conceptual improvements
+      such as effects and coeffects that improve testability by eliminating
+      the need of mocking inside the SPA business logic, or reactive
+      subscriptions which make views dumber and can also reduce the number of
+      renderings.
+    icon: 'fa-ban'
+    accepted: true
+    cancelled: true
