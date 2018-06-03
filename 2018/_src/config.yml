@@ -1,0 +1,17 @@
+conference:
+  name: 'Barcelona Perl & Friends 2018'
+  date: 'Saturday 17 Nov 2018'
+  url: 'http://friends.barcelona.pm/2018/'
+  registration_open: true
+  registration_url: 'https://goo.gl/forms/UYNZ8hna513bJekh1'
+  call_for_papers_open: true
+  call_for_papers_url: 'https://goo.gl/forms/n0oGOE0HuXd4aR4g1'
+  talks_open: false
+  schedule_open: false
+  finished: false
+
+venue:
+
+events:
+
+talks:

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>[% conference.name %]</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="[% conference.name %]"/>
+    <meta property="og:title" content="[% conference.name %]" />
+    <meta property="og:url" content="[% conference.url %]" />
+    <meta property="og:description" content="A free one-day conference for Perl geeks and friends" />
+    <meta property="og:image" content="http://friends.barcelona.pm/2017/images/og-image.png" />
+  </head>
+  <body class="landing">
+    <div id="page-wrapper">
+      [% INCLUDE templates/index/banner.tt %]
+      [% INCLUDE templates/index/presentation.tt %]
+      [% INCLUDE templates/index/venue.tt %]
+      [% INCLUDE templates/index/schedule.tt %]
+      [% INCLUDE templates/index/talks.tt %]
+      [% INCLUDE templates/index/footer.tt %]
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
