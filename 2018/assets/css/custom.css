@@ -34,8 +34,9 @@ span.fit iframe {
   background-color: #173b5f;
 }
 
-#banner .inner {
-  padding-left: 20em;
+body.landing #page-wrapper {
+  background-size: 150%;
+  background-position: 55% center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -55,18 +56,6 @@ span.fit iframe {
   }
   #banner h2 .principal {
     font-size: 1.2em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #banner .inner {
-    padding-left: 10em;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  #banner .inner {
-    padding-left: 0em;
   }
 }
 
