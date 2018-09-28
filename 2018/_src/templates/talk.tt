@@ -2,7 +2,7 @@
   <head>
     <title>[% conference.name %]</title>
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content= "[% talk.name %]"/>
+    <meta name="twitter:title" content= "[% talk.author %] - [% talk.name %]"/>
     <meta property="og:site_name" content="[% conference.name %]"/>
     <meta property="og:url" content="friends.barcelona.pm" />
     <meta property="og:description" content="[% talk.description %]" />
