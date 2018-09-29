@@ -12,6 +12,7 @@
         <li>
           <a
             href="[% conference.registration_url %]"
+            target="_blank"
             class="button fit special"
           >Register</a>
         </li>
@@ -20,6 +21,7 @@
         <li>
           <a
             href="[% conference.call_for_papers_url %]"
+            target="_blank"
             class="button fit"
           >Submit a talk</a>
         </li>

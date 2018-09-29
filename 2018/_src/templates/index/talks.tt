@@ -5,7 +5,9 @@
 
       [% IF conference.call_for_papers_open == 'true' %]
         <p>
-          <a href="[% conference.call_for_papers_url %]">Submit a talk!</a>
+          <a href="[% conference.call_for_papers_url %]" target="_blank">
+            Submit a talk!
+          </a>
         </p>
         <p>
           We have some really good and experienced speakers already lined up
@@ -17,7 +19,9 @@
           What you take for granted might be unknown for others. If you think
           that you don't have something to talk about for 20 to 50 minutes, you
           can submit a Lightning Talk (talks limited to 5 minutes).
-          <a href="[% conference.call_for_papers_url %]">Surprise us!</a>
+          <a href="[% conference.call_for_papers_url %]" target="_blank">
+            Surprise us!
+          </a>
         </p>
       [% ELSIF conference.talks_open == 'true' %]
         <p>
