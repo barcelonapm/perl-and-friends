@@ -1,0 +1,85 @@
+[% IF conference.schedule_open == 'true' %]
+  <section id="/schedule" class="wrapper style3 special">
+    <div class="inner">
+      <header class="major">
+        <h2>Schedule</h2>
+        [% IF conference.finished %]
+          <p>
+            The schedule for the [% conference.name %] started at 9:30 and
+            included 18 talks (4 of them were lightning talks). We finished
+            at 19:00 after almost 10 hours of a great conference.
+          </p>
+        [% ELSE %]
+          <p>
+            The show will start at 9:30am, but we'll open at 9 for
+            registration. We'll have a couple of coffee breaks and an 1:30h
+            lunch break.
+          <p>
+        [% END %]
+      </header>
+
+      <table id="schedule">
+        <thead>
+          <tr class="header">
+            <th></th>
+            [% FOREACH room IN venue.rooms %]
+              <th>[% room.name %]</th>
+            [% END %]
+          </tr>
+        </thead>
+
+        <tbody>
+          [% FOREACH time IN schedule.keys.sort %]
+            [% line = schedule.$time %]
+            <tr>
+              [% IF line.label %]
+                <td class="time">[% time %]</td>
+              [% ELSE %]
+                <td class="empty"></td>
+              [% END %]
+
+              [% IF line.event %]
+                [% colspan = venue.rooms.size %]
+                [% rowspan = line.event.duration / 10 %]
+                <td
+                  class="room room-venue time-[% line.event.duration %]"
+                  rowspan="[% rowspan %]"
+                  colspan="[% colspan %]"
+                >
+                  <div class="title">[% line.event.name %]</div>
+                </td>
+              [% END %]
+
+              [% FOREACH room IN venue.rooms %]
+                [% index = loop.index %]
+                [% talk = line.talks.$index %]
+
+                [% IF talk && ! talk.skip %]
+                  [% rowspan = talk.duration / 10 %]
+                  <td
+                    class="room room-[% index %] time-[% talk.duration %]"
+                    rowspan="[% rowspan %]"
+                  >
+                    <div class="title">
+                      [% IF talk.slug %]
+                        <a href="#/talks/[% talk.slug %]">[% talk.name %]</a>
+                      [% ELSE %]
+                        [% talk.name %]
+                      [% END %]
+                    </div>
+
+                    [% IF talk.author %]
+                      <div class="author">[% talk.author %]</div>
+                    [% END %]
+                  </td>
+                [% ELSIF !talk.skip %]
+                  <td class="empty"></td>
+                [% END %]
+              [% END %]
+            </tr>
+          [% END %]
+        </tbody>
+      </table>
+    </div>
+  </section>
+[% END %]

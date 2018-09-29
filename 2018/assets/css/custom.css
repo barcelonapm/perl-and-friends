@@ -16,6 +16,10 @@ span.fit iframe {
   font-size: 1.2em;
 }
 
+#banner {
+  background-clip: padding-box;
+}
+
 #banner h2 {
   text-transform: none;
   font-size: 3em;
@@ -26,7 +30,26 @@ span.fit iframe {
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 736px) {
+#banner:after {
+  background-color: #173b5f;
+}
+
+body.landing #page-wrapper {
+  background-size: 150%;
+  background-position: 55% center;
+}
+
+@media screen and (max-width: 1000px) {
+  #banner h2 {
+    text-transform: none;
+    font-size: 2.1em;
+  }
+  #banner h2 .principal {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 780px) {
   #banner h2 {
     text-transform: none;
     font-size: 1.6em;
@@ -101,7 +124,7 @@ span.fit iframe {
   margin-bottom: 1em;
 }
 
-#schedule td {
+#schedule td.time {
   border-top: 1px solid rgba(0, 0, 0, 0.315)
 }
 
@@ -110,12 +133,12 @@ span.fit iframe {
   text-align: left;
 }
 
-#schedule td.room-1 {
+#schedule td.room-0 {
   background-color: rgba(0, 0, 0, 0.21);
   border-bottom: 2px solid rgba(0, 0, 0, 0.125);
 }
 
-#schedule td.room-2 {
+#schedule td.room-1 {
   background-color: rgba(0, 0, 0, 0.15);
   border-bottom: 2px solid rgba(0, 0, 0, 0.125);
 }
@@ -130,11 +153,12 @@ span.fit iframe {
   padding-top: 0;
 }
 
-#schedule tr.slot-10 { height: 3em; }
-#schedule tr.slot-20 { height: 6em; }
-#schedule tr.slot-30 { height: 9em; }
-#schedule tr.slot-50 { height: 15em; }
-#schedule tr.slot-90 { height: 20em; }
+#schedule td.time-10 { min-height: 3em; }
+#schedule td.time-20 { min-height: 6em; }
+#schedule td.time-30 { min-height: 9em; }
+#schedule td.time-50 { min-height: 15em; }
+#schedule td.time-90 { min-height: 20em; }
+#schedule td.empty   { height: 0; padding: 0; }
 
 @media screen and (max-width: 736px) {
   #schedule thead {

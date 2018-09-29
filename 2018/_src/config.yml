@@ -1,0 +1,26 @@
+conference:
+  name: 'Barcelona Perl & Friends 2018'
+  date: 'Saturday 17 Nov 2018'
+  url: 'http://friends.barcelona.pm/2018/'
+  registration_open: true
+  registration_url: 'https://goo.gl/forms/UYNZ8hna513bJekh1'
+  call_for_papers_open: true
+  call_for_papers_url: 'https://goo.gl/forms/n0oGOE0HuXd4aR4g1'
+  talks_open: true
+  schedule_open: false
+  finished: false
+
+venue:
+
+events:
+
+talks:
+ - author: 'Javi Moreno'
+   name: 'Cómo divertirte haciendo una buena charla técnica'
+   slug: 'como-divertirte-haciendo-una-buena-charla-tecnica'
+   description: >
+     Dar charlas y cursos es una de las mejores maneras que tenemos de devolver a la comunidad lo que nos ha aportado y a la vez mejorar nuestros propios conocimientos sobre cualquier materia. Pero no se nace sabiendo (como bastantes meetups evidencian dolorosamente cada semana) así que si quieres ahorrarte algunos de los problemas por los que he pasado y mantener más fácilmente la atención de los asistentes te contaré los trucos y técnicas que conozco.
+   icon: 'fa-microphone'
+   duration: 50
+   accepted: true
+
