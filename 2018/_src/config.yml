@@ -23,4 +23,11 @@ talks:
    icon: 'fa-microphone'
    duration: 50
    accepted: true
-
+ - author: 'Diego Kuperman'
+   name: 'How I have stopped hating the end of month'
+   slug: 'How-I-have-stopped-hating-the-end-of-month'
+   description: >
+       For the last +10 years I've been working as a freelance or for my own companies and since day one, invoicing and accounting was a pain for me. In this talk I will talk about all my attempts at scratching this itch and I will show my last solution which involves perl, CLI, Web, Async and replacing people with software!
+   icon: 'fa-euro'
+   duration: 20
+   accepted: true
