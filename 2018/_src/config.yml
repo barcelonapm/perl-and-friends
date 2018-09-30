@@ -25,7 +25,7 @@ talks:
    accepted: true
  - author: 'Oriol Arcas Abella'
    name: 'eBPF, the secret weapon of Linux'
-   slug: 'ebpf-the-secret-weapon-of-Linux'
+   slug: 'ebpf-the-secret-weapon-of-linux'
    description: >
        What is the secret tool used in Facebook and Cloudflare to resist massive DDoS attacks, trace SQL queries in real time or diagnose slow file systems, using 100-line Python programs? Come and learn about the hottest topic in Linux networking right now.
    icon: 'fa-user-secret'
