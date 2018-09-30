@@ -25,15 +25,15 @@ talks:
    accepted: true
  - author: 'Oriol Arcas Abella'
    name: 'eBPF, the secret weapon of Linux'
-   slug: 'eBPF-the-secret-weapon-of-Linux'
+   slug: 'ebpf-the-secret-weapon-of-Linux'
    description: >
        What is the secret tool used in Facebook and Cloudflare to resist massive DDoS attacks, trace SQL queries in real time or diagnose slow file systems, using 100-line Python programs? Come and learn about the hottest topic in Linux networking right now.
    icon: 'fa-user-secret'
    duration: 20
    accepted: true
  - author: 'Diego Kuperman'
-   name: 'How I have stopped hating the end of month'
-   slug: 'How-I-have-stopped-hating-the-end-of-month'
+   name: 'how I have stopped hating the end of month'
+   slug: 'how-I-have-stopped-hating-the-end-of-month'
    description: >
        For the last +10 years I've been working as a freelance or for my own companies and since day one, invoicing and accounting was a pain for me. In this talk I will talk about all my attempts at scratching this itch and I will show my last solution which involves perl, CLI, Web, Async and replacing people with software!
    icon: 'fa-euro'
