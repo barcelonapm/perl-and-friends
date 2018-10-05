@@ -51,7 +51,7 @@ sub build_templates {
             "/talks/$talk->{slug}.html"
         );
         build_talk_ogg(
-	    'images/og-talk.png',
+	    'images/og_talk.png',
 	    { conference => $config->{conference}, talk => $talk },
 	    'images/talks',
         );
@@ -112,7 +112,7 @@ sub build_talk_ogg  {
        return join "", @newtext;
     };
 
-    $image->Read("$root_dir/images/og_talk.png"); 
+    $image->Read("$root_dir/$base"); 
     $image->Annotate( text=>$Wrap->($author,$image,650), #talk author,
                       x=>270,y=>30);
     $image->Set( weight => 'Bold',); #prepare for title
@@ -129,8 +129,8 @@ sub build_talk_ogg  {
                   stroke      => 'white',
                   fill        => 'none',
                   points      => '300,410,930,410',);
-    mkdir("$root_dir/images/talks/") unless -e "$root_dir/images/talks/";
-    $image->Write("$root_dir/images/talks/$id.png");
+    mkdir("$root_dir/$dest") unless -e "$root_dir/$dest";
+    $image->Write("$root_dir/$dest/$id.png");
     undef $image;
 }
 
