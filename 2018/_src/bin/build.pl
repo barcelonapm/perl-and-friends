@@ -9,6 +9,7 @@ use AnyEvent::Filesys::Notify;
 use File::Basename;
 use Template;
 use YAML::Tiny qw/LoadFile/;
+use Image::Magick;
 
 my $current_dir = dirname(__FILE__);
 my $template_dir = "$current_dir/../templates";
@@ -49,9 +50,80 @@ sub build_templates {
             { conference => $config->{conference}, talk => $talk },
             "/talks/$talk->{slug}.html"
         );
+        build_talk_ogg($talk->{slug},$talk->{author},$talk->{name},);
     }
 
     say "Done!";
+}
+
+sub build_talk_ogg  {
+# uses Image::Magick to create a talk card grafic
+    my ($id,$author,$title,$twitterid) = @_;
+    my $image = Image::Magick->new(size=>'960x462',pointsize=>30,stroke=>'white',fill=>'white',);
+    my $Wrap = sub {
+    # This anonimous routine uses the current Image::Magick setings
+    # to format an string in with a maximun len in pixels
+    #
+        my ($text, $img, $maxwidth) = @_;
+    
+        # figure out the width of every character in the string
+        #
+        my %widths = map(($_ => ($img->QueryFontMetrics(text=>$_))[4]),
+            keys %{{map(($_ => 1), split //, $text)}});
+        my ($pos,@newtext) = (0,);
+        for (split //, $text) {
+            # check to see if we're about to go out of bounds
+            if ($widths{$_} + $pos > $maxwidth) {
+                $pos = 0;
+                my @word;
+                # if we aren't already at the end of the word,
+                #  loop until we hit the beginning
+                if (       $newtext[-1] ne " "
+                        && $newtext[-1] ne "-"
+                        && $newtext[-1] ne "\n") {
+                    unshift @word, pop @newtext
+                        while (   @newtext && $newtext[-1] ne " "
+                               && $newtext[-1] ne "-"
+                               && $newtext[-1] ne "\n")
+                }
+
+                # if we hit the beginning of a line,
+                # we need to split a word in the middle
+                if ($newtext[-1] eq "\n" || @newtext == 0) {
+                    push @newtext, @word, "\n";
+                } else {
+                    push @newtext, "\n", @word;
+                    $pos += $widths{$_} for (@word);
+                }
+            }
+            push @newtext, $_;
+            $pos += $widths{$_};
+            $pos = 0 if $newtext[-1] eq "\n";
+       }
+    
+       return join "", @newtext;
+    };
+
+    $image->Read("$root_dir/images/og_talk.png"); 
+    $image->Annotate( text=>$Wrap->($author,$image,650), #talk author,
+                      x=>270,y=>30);
+    $image->Set( weight => 'Bold',); #prepare for title
+    $image->Annotate( text=> $Wrap->($title,$image,650),
+                      x=>270,y=>66);
+                 
+    $image->Draw( primitive   => 'line',
+                  strokewidth => 3, 
+                  stroke      => 'white',
+                  fill        => 'none',
+                  points      => '300,230,930,230',);
+    $image->Draw( primitive   => 'line',
+                  strokewidth => 3, 
+                  stroke      => 'white',
+                  fill        => 'none',
+                  points      => '300,410,930,410',);
+    mkdir("$root_dir/images/talks/") unless -e "$root_dir/images/talks/";
+    $image->Write("$root_dir/images/talks/$id.png");
+    undef $image;
 }
 
 sub build_template {
