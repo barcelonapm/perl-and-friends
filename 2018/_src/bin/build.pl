@@ -15,7 +15,7 @@ my $current_dir = dirname(__FILE__);
 my $template_dir = "$current_dir/../templates";
 my $root_dir = "$current_dir/../..";
 
-my $watch = $ARGV[0] eq '--watch' || $ARGV[0] eq '-w';
+my $watch =  $ARGV[0] eq '--watch' || $ARGV[0] eq '-w' if scalar(@ARGV);
 
 sub main {
     build_templates();
