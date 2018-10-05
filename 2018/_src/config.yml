@@ -23,4 +23,28 @@ talks:
    icon: 'fa-microphone'
    duration: 50
    accepted: true
+ - author: 'Oriol Arcas Abella'
+   name: 'eBPF, the secret weapon of Linux'
+   slug: 'ebpf-the-secret-weapon-of-linux'
+   description: >
+       What is the secret tool used in Facebook and Cloudflare to resist massive DDoS attacks, trace SQL queries in real time or diagnose slow file systems, using 100-line Python programs? Come and learn about the hottest topic in Linux networking right now.
+   icon: 'fa-user-secret'
+   duration: 20
+   accepted: true
+ - author: 'Diego Kuperman'
+   name: 'How I have stopped hating the end of month'
+   slug: 'how-I-have-stopped-hating-the-end-of-month'
+   description: >
+       For the last +10 years I've been working as a freelance or for my own companies and since day one, invoicing and accounting was a pain for me. In this talk I will talk about all my attempts at scratching this itch and I will show my last solution which involves perl, CLI, Web, Async and replacing people with software!
+   icon: 'fa-euro'
+   duration: 20
+   accepted: true
+ - author: 'Quim De la Cruz'
+   name: 'Build a blockchain without fancy words'
+   slug: 'build-a-blockchain-without-fancy-words'
+   description: >
+       Seguro que has oído hablar del blockchain alguna vez, una tecnología que promete dar una solución a muchos problemas que nos plantea la sociedad. A pesar de su potencial muy poca gente sabe como funciona un sistema blockchain. Y como vosotros sabréis no hay nada mejor para entender un problema que programarlo. En esta charla programaremos nuestro propio sistema blockchain, con sus algoritmos de encriptación, sus algoritmos de minado, etc.
+   icon: 'fa-link'
+   duration: 20
+   accepted: true
 
