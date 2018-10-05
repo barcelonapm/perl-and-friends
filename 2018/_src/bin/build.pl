@@ -50,7 +50,11 @@ sub build_templates {
             { conference => $config->{conference}, talk => $talk },
             "/talks/$talk->{slug}.html"
         );
-        build_talk_ogg($talk->{slug},$talk->{author},$talk->{name},);
+        build_talk_ogg(
+	    'images/og-talk.png',
+	    { conference => $config->{conference}, talk => $talk },
+	    'images/talks',
+        );
     }
 
     say "Done!";
@@ -58,9 +62,13 @@ sub build_templates {
 
 sub build_talk_ogg  {
 # uses Image::Magick to create a talk card grafic
-    my ($id,$author,$title,$twitterid) = @_;
-    my $image = Image::Magick->new(size=>'960x462',pointsize=>30,stroke=>'white',fill=>'white',);
-    my $Wrap = sub {
+    my ($base,$vars,$dest) = @_;
+    my ($id,$author,$title,$timedate,$image,$Wrap);
+    $id       = $vars->{talk}->{slug};
+    $author   = $vars->{talk}->{author};
+    $title    = $vars->{talk}->{name};
+    $image = Image::Magick->new(size=>'960x462',pointsize=>30,stroke=>'white',fill=>'white',);
+    $Wrap = sub {
     # This anonimous routine uses the current Image::Magick setings
     # to format an string in with a maximun len in pixels
     #
