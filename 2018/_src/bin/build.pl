@@ -67,7 +67,8 @@ sub build_talk_ogg  {
     $id       = $vars->{talk}->{slug};
     $author   = $vars->{talk}->{author};
     $title    = $vars->{talk}->{name};
-    $image = Image::Magick->new(size=>'960x462',pointsize=>30,stroke=>'white',fill=>'white',);
+    $timedate = $vars->{conference}->{date};
+    $image = Image::Magick->new(size=>'960x462',pointsize=>35,stroke=>'white',fill=>'white',weight => 'light');
     $Wrap = sub {
     # This anonimous routine uses the current Image::Magick setings
     # to format an string in with a maximun len in pixels
@@ -113,12 +114,21 @@ sub build_talk_ogg  {
     };
 
     $image->Read("$root_dir/$base"); 
-    $image->Annotate( text=>$Wrap->($author,$image,650), #talk author,
-                      x=>270,y=>30);
+    $image->Annotate( text    =>$Wrap->($author,$image,650), #talk author,
+	              stroke  => 'yellow',
+                      x=>260,y=>50);
+
     $image->Set( weight => 'Bold',); #prepare for title
-    $image->Annotate( text=> $Wrap->($title,$image,650),
-                      x=>270,y=>66);
-                 
+    $image->Annotate( text    => $Wrap->($title,$image,620),
+	              stroke  => 'yellow',
+                      x=>300,y=>105,);
+
+    $image->Set( wheight => 'light' );
+    $image->Annotate( text    =>$timedate,
+                      stroke  => 'yellow',
+	              x=>615,y=> 450,
+       		      align   => 'Center',);
+          		      
     $image->Draw( primitive   => 'line',
                   strokewidth => 3, 
                   stroke      => 'white',
