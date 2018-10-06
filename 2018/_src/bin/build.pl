@@ -113,7 +113,9 @@ sub build_talk_ogg  {
        return join "", @newtext;
     };
 
-    $image->Read("$root_dir/$base"); 
+    my $x = $image->Read("$root_dir/$base");
+    warn "($x)" if $x && !ref($x);
+    die   "can't read \"$root_dir/$base\"" if $x; 
     $image->Annotate( text    =>$Wrap->($author,$image,650), #talk author,
 	              stroke  => 'yellow',
                       x=>260,y=>50);
