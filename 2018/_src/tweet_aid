@@ -1,0 +1,3 @@
+#!/bin/bash
+
+find ../talks  |perl -ne'print if s|\.\.(.+)/(.*)|<a href="http://friends.barcelona.pm/2018/$1/$2">$2</a><p>|' >../tweet_aid.html
