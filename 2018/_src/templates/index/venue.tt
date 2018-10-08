@@ -5,7 +5,7 @@
         <h2>Venue</h2>
 
         <p>
-          [% IF conference.finished %]
+          [% IF conference.finished == 'true' %]
             The conference took place at
           [% ELSE %]
             The conference will take place at
