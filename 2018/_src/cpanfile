@@ -4,3 +4,4 @@ requires 'AnyEvent::Filesys::Notify';
 requires 'File::Basename';
 requires 'Template';
 requires 'YAML::Tiny';
+requires 'Image::Magick';

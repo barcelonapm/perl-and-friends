@@ -6,7 +6,7 @@ if [ "$with_docker" == "please" ]; then
       -w /work/_src \
       -u $(id -u):$(id -g) \
       -e 'HOME=/tmp/' \
-      perl ./build $*
+      meis/perl5-imagemagick ./build $*
 else
   rm -rf ../index.html ../talks
 
