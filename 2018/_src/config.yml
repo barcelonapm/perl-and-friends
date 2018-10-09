@@ -54,4 +54,11 @@ talks:
    icon: 'fa-link'
    duration: 20
    accepted: true
-
+ - author: 'Jordi Delgado'
+   name: 'Les projeccions de Futamura'
+   slug: 'les-projeccions-de-futamura'
+   description: >
+       Explicarem les conseqüències pràctiques de tenir un programa que especialitza altres programes a alguns dels seus paràmetres de manera eficient. L'existència d'aquest programa ve assegurada per un teorema dels anys 30, però trobar-ne un d'eficient no ha estat gens fàcil. La prova és que va fer falta esperar a finals dels 80 per trobar-ne un. Avui dia llenguatges com C o Scheme ja tenen programes que creen programes especialitzats eficients.
+   icon: 'fa-calendar-check-o'
+   duration: 50
+   accepted: true
