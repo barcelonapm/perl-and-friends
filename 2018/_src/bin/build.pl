@@ -112,7 +112,7 @@ sub build_talk_ogg  {
     
        return join "", @newtext;
     };
-
+    die "no trobo $root_dir/$base" unless -e "$root_dir/$base";
     my $x = $image->Read("$root_dir/$base");
     warn "($x)" if $x && !ref($x);
     die   "can't read \"$root_dir/$base\"" if $x; 
