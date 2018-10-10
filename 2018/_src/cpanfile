@@ -4,4 +4,5 @@ requires 'AnyEvent::Filesys::Notify';
 requires 'File::Basename';
 requires 'Template';
 requires 'YAML::Tiny';
-requires 'Image::Magick';
+requires 'Sub::Identify';
+requires 'Linux::Inotify2';
