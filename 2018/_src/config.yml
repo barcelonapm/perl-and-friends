@@ -11,6 +11,13 @@ conference:
   finished: false
 
 venue:
+  name: 'CAPSiDE offices'
+  url: 'https://capside.com'
+  map_url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11973.793882743914!2d2.16937!3d41.386066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60a6240b19be359b!2sCAPSiDE!5e0!3m2!1sca!2ses!4v1473529872313'
+  lunch_map_url: 'https://goo.gl/rECGRD'
+  rooms:
+    - name: '/lib'
+    - name: '/bin'
 
 events:
 
@@ -47,4 +54,11 @@ talks:
    icon: 'fa-link'
    duration: 20
    accepted: true
-
+ - author: 'Jordi Delgado'
+   name: 'Les projeccions de Futamura'
+   slug: 'les-projeccions-de-futamura'
+   description: >
+       Explicarem les conseqüències pràctiques de tenir un programa que especialitza altres programes a alguns dels seus paràmetres de manera eficient. L'existència d'aquest programa ve assegurada per un teorema dels anys 30, però trobar-ne un d'eficient no ha estat gens fàcil. La prova és que va fer falta esperar a finals dels 80 per trobar-ne un. Avui dia llenguatges com C o Scheme ja tenen programes que creen programes especialitzats eficients.
+   icon: 'fa-calendar-check-o'
+   duration: 50
+   accepted: true
