@@ -13,7 +13,7 @@ else
   export PERL5LIB=$(pwd)/local/lib/perl5:$PERL5LIB
 
   cpanm --local-lib=$(pwd)/local -nq Carton
-  ./local/bin/carton install --deployment
+  carton install --deployment
 
   $(pwd)/bin/build.pl $*
 fi
