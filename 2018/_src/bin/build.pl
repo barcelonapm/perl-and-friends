@@ -118,17 +118,17 @@ sub build_talk_ogg  {
     die   "can't read \"$root_dir/$base\"" if $x; 
     $image->Annotate( text    =>$Wrap->($author,$image,620), #talk author,
 	              stroke  => 'yellow',
-                      x=>300,y=>250);
+                      x=>300,y=>300);
 
     $image->Set( weight => 'Bold',); #prepare for title
     $image->Annotate( text    => $Wrap->($title,$image,620),
 	              stroke  => 'yellow',
-                      x=>300,y=>300,);
+                      x=>300,y=>350,);
 
     $image->Set( wheight => 'light' );
     $image->Annotate( text    =>$timedate,
                       stroke  => 'yellow',
-	              x=>615,y=> 445,
+	              x=>615,y=> 250,
        		      align   => 'Center',);
           		      
     $image->Draw( primitive   => 'line',
