@@ -118,29 +118,29 @@ sub build_talk_ogg  {
     die   "can't read \"$root_dir/$base\"" if $x; 
     $image->Annotate( text    =>$Wrap->($author,$image,620), #talk author,
 	              stroke  => 'yellow',
-                      x=>300,y=>50);
+                      x=>300,y=>300);
 
     $image->Set( weight => 'Bold',); #prepare for title
     $image->Annotate( text    => $Wrap->($title,$image,620),
 	              stroke  => 'yellow',
-                      x=>300,y=>105,);
+                      x=>300,y=>350,);
 
     $image->Set( wheight => 'light' );
     $image->Annotate( text    =>$timedate,
                       stroke  => 'yellow',
-	              x=>615,y=> 450,
+	              x=>615,y=> 250,
        		      align   => 'Center',);
           		      
     $image->Draw( primitive   => 'line',
                   strokewidth => 3, 
                   stroke      => 'white',
                   fill        => 'none',
-                  points      => '300,230,930,230',);
+                  points      => '300,210,930,210',);
     $image->Draw( primitive   => 'line',
                   strokewidth => 3, 
                   stroke      => 'white',
                   fill        => 'none',
-                  points      => '300,410,930,410',);
+                  points      => '300,30,930,30',);
     mkdir("$root_dir/$dest") unless -e "$root_dir/$dest";
     $image->Write("$root_dir/$dest/$id.png");
     undef $image;
