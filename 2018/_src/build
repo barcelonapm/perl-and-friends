@@ -6,14 +6,14 @@ if [ "$with_docker" == "please" ]; then
       -w /work/_src \
       -u $(id -u):$(id -g) \
       -e 'HOME=/tmp/' \
-      perl ./build $*
+      meis/perl5-imagemagick ./build $*
 else
   rm -rf ../index.html ../talks
 
   export PERL5LIB=$(pwd)/local/lib/perl5:$PERL5LIB
 
   cpanm --local-lib=$(pwd)/local -nq Carton
-  ./local/bin/carton install --deployment
+  carton install --deployment
 
   $(pwd)/bin/build.pl $*
 fi

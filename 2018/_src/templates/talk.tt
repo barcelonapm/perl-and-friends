@@ -6,7 +6,7 @@
     <meta property="og:site_name" content="[% conference.name %]"/>
     <meta property="og:url" content="friends.barcelona.pm" />
     <meta property="og:description" content="[% talk.description %]" />
-    <meta property="og:image" content="http://friends.barcelona.pm/2017/images/og-image.png" />
+    <meta property="og:image" content="http://friends.barcelona.pm/2018/images/talks/[% talk.slug %].png" />
   </head>
   <body>
     <script>

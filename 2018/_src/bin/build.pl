@@ -9,12 +9,13 @@ use AnyEvent::Filesys::Notify;
 use File::Basename;
 use Template;
 use YAML::Tiny qw/LoadFile/;
+use Image::Magick;
 
 my $current_dir = dirname(__FILE__);
 my $template_dir = "$current_dir/../templates";
 my $root_dir = "$current_dir/../..";
 
-my $watch = $ARGV[0] eq '--watch' || $ARGV[0] eq '-w';
+my $watch =  $ARGV[0] eq '--watch' || $ARGV[0] eq '-w' if scalar(@ARGV);
 
 sub main {
     build_templates();
@@ -49,9 +50,100 @@ sub build_templates {
             { conference => $config->{conference}, talk => $talk },
             "/talks/$talk->{slug}.html"
         );
+        build_talk_ogg(
+	    'images/og_talk.png',
+	    { conference => $config->{conference}, talk => $talk },
+	    'images/talks',
+        );
     }
 
     say "Done!";
+}
+
+sub build_talk_ogg  {
+# uses Image::Magick to create a talk card grafic
+    my ($base,$vars,$dest) = @_;
+    my ($id,$author,$title,$timedate,$image,$Wrap);
+    $id       = $vars->{talk}->{slug};
+    $author   = $vars->{talk}->{author};
+    $title    = $vars->{talk}->{name};
+    $timedate = $vars->{conference}->{date};
+    $image = Image::Magick->new(size=>'960x462',pointsize=>35,stroke=>'white',fill=>'white',weight => 'light');
+    $Wrap = sub {
+    # This anonimous routine uses the current Image::Magick setings
+    # to format an string in with a maximun len in pixels
+    #
+        my ($text, $img, $maxwidth) = @_;
+    
+        # figure out the width of every character in the string
+        #
+        my %widths = map(($_ => ($img->QueryFontMetrics(text=>$_))[4]),
+            keys %{{map(($_ => 1), split //, $text)}});
+        my ($pos,@newtext) = (0,);
+        for (split //, $text) {
+            # check to see if we're about to go out of bounds
+            if ($widths{$_} + $pos > $maxwidth) {
+                $pos = 0;
+                my @word;
+                # if we aren't already at the end of the word,
+                #  loop until we hit the beginning
+                if (       $newtext[-1] ne " "
+                        && $newtext[-1] ne "-"
+                        && $newtext[-1] ne "\n") {
+                    unshift @word, pop @newtext
+                        while (   @newtext && $newtext[-1] ne " "
+                               && $newtext[-1] ne "-"
+                               && $newtext[-1] ne "\n")
+                }
+
+                # if we hit the beginning of a line,
+                # we need to split a word in the middle
+                if ($newtext[-1] eq "\n" || @newtext == 0) {
+                    push @newtext, @word, "\n";
+                } else {
+                    push @newtext, "\n", @word;
+                    $pos += $widths{$_} for (@word);
+                }
+            }
+            push @newtext, $_;
+            $pos += $widths{$_};
+            $pos = 0 if $newtext[-1] eq "\n";
+       }
+    
+       return join "", @newtext;
+    };
+    die "no trobo $root_dir/$base" unless -e "$root_dir/$base";
+    my $x = $image->Read("$root_dir/$base");
+    warn "($x)" if $x && !ref($x);
+    die   "can't read \"$root_dir/$base\"" if $x; 
+    $image->Annotate( text    =>$Wrap->($author,$image,620), #talk author,
+	              stroke  => 'yellow',
+                      x=>300,y=>50);
+
+    $image->Set( weight => 'Bold',); #prepare for title
+    $image->Annotate( text    => $Wrap->($title,$image,620),
+	              stroke  => 'yellow',
+                      x=>300,y=>105,);
+
+    $image->Set( wheight => 'light' );
+    $image->Annotate( text    =>$timedate,
+                      stroke  => 'yellow',
+	              x=>615,y=> 450,
+       		      align   => 'Center',);
+          		      
+    $image->Draw( primitive   => 'line',
+                  strokewidth => 3, 
+                  stroke      => 'white',
+                  fill        => 'none',
+                  points      => '300,230,930,230',);
+    $image->Draw( primitive   => 'line',
+                  strokewidth => 3, 
+                  stroke      => 'white',
+                  fill        => 'none',
+                  points      => '300,410,930,410',);
+    mkdir("$root_dir/$dest") unless -e "$root_dir/$dest";
+    $image->Write("$root_dir/$dest/$id.png");
+    undef $image;
 }
 
 sub build_template {
