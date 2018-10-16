@@ -38,6 +38,8 @@ sub build_templates {
 
     $config->{schedule} = build_schedule($config);
 
+    load_talks_config($config);
+
     say "Building templates:";
 
     build_template('index.tt', $config, 'index.html');
@@ -52,6 +54,20 @@ sub build_templates {
     }
 
     say "Done!";
+}
+
+sub load_talks_config {
+    my $config = shift;
+
+    my $dir = "$current_dir/../talks.d";
+    opendir my $talks_d, $dir or return;
+    while ( my $file = readdir $talks_d) {
+        next if $file !~ /\.yml$/;
+
+        my $talk = LoadFile("$dir/$file");
+        push @{$config->{talks}}, $talk;
+    }
+    closedir $talks_d;
 }
 
 sub build_template {
