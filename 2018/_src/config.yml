@@ -70,4 +70,11 @@ talks:
    icon: 'fa-bolt'
    duration: 50
    accepted: true
-
+ - author: 'vti'
+   name: 'CPAN Audit'
+   slug: 'cpan-audit'
+   description: >
+        CPAN Audit is an open source tool developed to query CPAN modules for known security vulnerabilities. I will explain what it's for and how we can all improve it.
+   icon: 'fa-eye'
+   duration: 20
+   accepted: true
