@@ -78,3 +78,11 @@ talks:
    icon: 'fa-eye'
    duration: 20
    accepted: true
+ - author: 'Pablo Vigo'
+   name: 'Projecte Linkat 2018'
+   slug: 'projecte-linkat-2018'
+   description: >
+       Novetats i estat del projecte Linkat al 2018
+   icon: 'fa-linux'
+   duration: 20
+   accepted: true
