@@ -78,3 +78,11 @@ talks:
    icon: 'fa-eye'
    duration: 20
    accepted: true
+ - author: 'Alexander Salas Bastidas'
+   name: 'Teclib Contributors Guides'
+   slug: 'teclib-contributors-guides'
+   description: >
+        Teclib Contributors Guides are a collection of resources for individuals, communities, and companies who want to learn how to run and contribute to a free software project.Teclib Contributors Guides were created and are curated by Teclib, but they are not exclusive to Teclib products. Our goal is to aggregate community best practices.
+   icon: 'fa-people-carry'
+   duration: 20
+   accepted: true
