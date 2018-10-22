@@ -78,6 +78,14 @@ talks:
    icon: 'fa-eye'
    duration: 20
    accepted: true
+ - author: 'Alexander Salas Bastidas'
+   name: 'Teclib Contributors Guides'
+   slug: 'teclib-contributors-guides'
+   description: >
+       Las Guías de Contribuidores de Teclib son una colección de recursos para personas, comunidades y empresas que quieren aprender como desplegar y contribuir a un proyecto de software libre. Las guías fueron creadas y mantenidas por Teclib, pero no son exclusivas de los productos Teclib. Nuestro objetivo es agregar buenas prácticas de comunidades.
+   icon: 'fa-users'
+   duration: 20
+   accepted: true
  - author: 'Pablo Vigo'
    name: 'Projecte Linkat 2018'
    slug: 'projecte-linkat-2018'
