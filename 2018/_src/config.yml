@@ -82,7 +82,7 @@ talks:
    name: 'Teclib Contributors Guides'
    slug: 'teclib-contributors-guides'
    description: >
-        Teclib Contributors Guides are a collection of resources for individuals, communities, and companies who want to learn how to run and contribute to a free software project.Teclib Contributors Guides were created and are curated by Teclib, but they are not exclusive to Teclib products. Our goal is to aggregate community best practices.
+       Las Guías de Contribuidores de Teclib son una colección de recursos para personas, comunidades y empresas que quieren aprender como desplegar y contribuir a un proyecto de software libre. Las guías fueron creadas y mantenidas por Teclib, pero no son exclusivas de los productos Teclib. Nuestro objetivo es agregar buenas prácticas de comunidades.
    icon: 'fa-users'
    duration: 20
    accepted: true
