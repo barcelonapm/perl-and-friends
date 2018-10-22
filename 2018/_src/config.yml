@@ -78,6 +78,14 @@ talks:
    icon: 'fa-eye'
    duration: 20
    accepted: true
+ - author: 'Alexander Salas Bastidas'
+   name: 'Teclib Contributors Guides'
+   slug: 'teclib-contributors-guides'
+   description: >
+       Las Guías de Contribuidores de Teclib son una colección de recursos para personas, comunidades y empresas que quieren aprender como desplegar y contribuir a un proyecto de software libre. Las guías fueron creadas y mantenidas por Teclib, pero no son exclusivas de los productos Teclib. Nuestro objetivo es agregar buenas prácticas de comunidades.
+   icon: 'fa-users'
+   duration: 20
+   accepted: true
  - author: 'Pablo Vigo'
    name: 'Projecte Linkat 2018'
    slug: 'projecte-linkat-2018'
@@ -91,6 +99,6 @@ talks:
    slug: 'all-your-cluster-are-belong-to-us'
    description: >
        In this talk I’ll present how we manage our fleet of database clusters at Schibsted using immutable infrastructure and continuous delivery. We offer Kafka and Cassandra as a managed service for other teams at the company with over 50 clusters and how we manage it with a small team of 5 people.
-   icon: 'fa-user-secret'
+   icon: 'fa-space-shuttle'
    duration: 20
    accepted: true
