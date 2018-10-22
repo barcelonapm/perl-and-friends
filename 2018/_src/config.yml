@@ -86,3 +86,19 @@ talks:
    icon: 'fa-users'
    duration: 20
    accepted: true
+ - author: 'Pablo Vigo'
+   name: 'Projecte Linkat 2018'
+   slug: 'projecte-linkat-2018'
+   description: >
+       Novetats i estat del projecte Linkat al 2018
+   icon: 'fa-linux'
+   duration: 20
+   accepted: true
+ - author: 'Jorge Dias'
+   name: 'All your cluster are belong to us'
+   slug: 'all-your-cluster-are-belong-to-us'
+   description: >
+       In this talk I’ll present how we manage our fleet of database clusters at Schibsted using immutable infrastructure and continuous delivery. We offer Kafka and Cassandra as a managed service for other teams at the company with over 50 clusters and how we manage it with a small team of 5 people.
+   icon: 'fa-space-shuttle'
+   duration: 20
+   accepted: true
