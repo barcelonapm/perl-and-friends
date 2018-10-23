@@ -102,3 +102,11 @@ talks:
    icon: 'fa-space-shuttle'
    duration: 20
    accepted: true
+ - author: 'Andreas Finger'
+   name: 'Tricks for a simple(r) micro-service architecture'
+   slug: 'tricks-for-a-simpler-micro-service-architecture'
+   description: >
+       How to add new services or extract services out of a monolith, while avoiding complexity, tight coupling, domino effects, high latency and pain in general. This talk will explain the benefits of the RabbitMQ message broker and give valuable tips how to configure it. The slides will contain cute bunnies.
+   icon: 'fa-cubes'
+   duration: 20
+   accepted: true
