@@ -19,27 +19,6 @@ The upcoming event is
 [Barcelona Perl & Friends 2018](http://friends.barcelona.pm/2018).
 There's also a list of [past events](http://barcelona.pm/#events).
 
-How to Build the Current Website
---------------------------------
-
-For docker fans:
-
-```
-cd 2018/_src
-with_docker=please ./build
-```
-
-Without docker:
-
-```
-cd 2018/_src
-sudo apt install build-essential cpanminus libimage-magick-perl
-./build
-```
-
-When you're happy with the results, just commit and push them to
-master or make a pull request for others to review.
-
 Copyright & License
 -------------------
 
