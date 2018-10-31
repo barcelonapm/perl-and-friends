@@ -15,7 +15,9 @@ their usual attendees.
 List of Events
 --------------
 
-* [Barcelona Perl & Friends 2018](http://friends.barcelona.pm/2018)
+The upcoming event is
+[Barcelona Perl & Friends 2018](http://friends.barcelona.pm/2018).
+There's also a list of [past events](http://barcelona.pm/#events).
 
 How to Build the Current Website
 --------------------------------
