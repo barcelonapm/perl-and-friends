@@ -110,3 +110,11 @@ talks:
    icon: 'fa-cubes'
    duration: 20
    accepted: true
+ - author: 'Manuel Rivero'
+   name: 'Retrofitting a legacy SPA to use a functional architecture'
+   slug: 'retrofitting-a-legacy-spa-to-use-a-functional-architecture'
+   description: >
+       The talk is about how we retrofitted a legacy Om SPA to use a functional architecture like re-frame's one, and open sourced as a result the re-om & reffectory frameworks.
+   icon: 'fa-refresh'
+   duration: 50
+   accepted: true
