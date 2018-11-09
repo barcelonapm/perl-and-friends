@@ -118,3 +118,12 @@ talks:
    icon: 'fa-refresh'
    duration: 50
    accepted: true
+ - author: 'Jose Luis Martínez'
+   name: 'Performance through lightweight'
+   slug: 'performance-through-lightweight'
+   description: >
+      La tecnología de contenedores se está utilizando en mucho ámbitos.
+      Esta charla está enfocada a exponer recetas y técnicas para hacer que tus contenedores sean más ligeros.
+   icon: 'fa-car'
+   duration: 20
+   accepted: true
