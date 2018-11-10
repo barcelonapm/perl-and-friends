@@ -39,12 +39,12 @@ talks:
    duration: 20
    accepted: true
  - author: 'Diego Kuperman'
-   name: 'How I have stopped hating the end of month'
-   slug: 'how-I-have-stopped-hating-the-end-of-month'
+   name: 'Growing and refactoring our workforce'
+   slug: 'growing-and-refactoring-our-workforce'
    description: >
-       For the last +10 years I've been working as a freelance or for my own companies and since day one, invoicing and accounting was a pain for me. In this talk I will talk about all my attempts at scratching this itch and I will show my last solution which involves perl, CLI, Web, Async and replacing people with software!
-   icon: 'fa-euro'
-   duration: 20
+        In soysuper.com our architecture is highly event oriented since day one. We implemented resque on Perl and nowadays it supports a huge load of workers and queues. Last year we implemented a new product. It has grown so big that our way of handling jobs has become the biggest of our problems. I will explain how we solved this bottleneck.
+   icon: 'fa-shopping-cart'
+   duration: 50
    accepted: true
  - author: 'Quim De la Cruz'
    name: 'Build a blockchain without fancy words'
