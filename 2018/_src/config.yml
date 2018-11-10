@@ -86,6 +86,14 @@ talks:
    icon: 'fa-users'
    duration: 20
    accepted: true
+ - author: 'Jose Luis Pérez'
+   name: 'Fruit pi as a hacking toolkit'
+   slug: 'fruit-pi-as-a-hacking-toolkit'
+   description: >
+      Como usar las (Raspberry, Orange, Banana) pi en tu entorno de tabajo.
+   icon: 'fa-lemon-o'
+   duration: 20
+   accepted: true
  - author: 'Pablo Vigo'
    name: 'Projecte Linkat 2018'
    slug: 'projecte-linkat-2018'
@@ -125,5 +133,14 @@ talks:
       La tecnología de contenedores se está utilizando en mucho ámbitos.
       Esta charla está enfocada a exponer recetas y técnicas para hacer que tus contenedores sean más ligeros.
    icon: 'fa-car'
+   duration: 20
+   accepted: true
+ - author: 'Francesc Guasch'
+   name: 'Ravada: Free Virtual Desktops Manager'
+   slug: 'ravada-free-vdi'
+   description: >
+      Ravada is free Virtual Machines manager built in Perl.
+      I will show its features, how it is built and explain some use cases.
+   icon: 'fa-desktop'
    duration: 20
    accepted: true
