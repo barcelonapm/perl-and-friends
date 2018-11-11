@@ -4,7 +4,7 @@ conference:
   url: 'http://friends.barcelona.pm/2018/'
   registration_open: true
   registration_url: 'https://goo.gl/forms/UYNZ8hna513bJekh1'
-  call_for_papers_open: true
+  call_for_papers_open: false
   call_for_papers_url: 'https://goo.gl/forms/n0oGOE0HuXd4aR4g1'
   talks_open: true
   schedule_open: false
