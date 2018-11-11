@@ -144,3 +144,18 @@ talks:
    icon: 'fa-desktop'
    duration: 20
    accepted: true
+ - author: 'Marc Egea i Sala'
+   name: 'The (git) stories we tell ourselves'
+   slug: 'the-git-stories-we-tell-ourselves'
+   description: >
+     Git is a powerful tool, but we are far from taking full advantage of it.
+
+     We often see control versions systems only as a backup or checkpoints for
+     our code, and it's hard to see how using them one way or another can
+     impact our development.
+
+     I will explain some techniques and strategies that help me write better
+     and more maintainable code.
+   icon: 'fa-code-fork'
+   duration: 20
+   accepted: true
