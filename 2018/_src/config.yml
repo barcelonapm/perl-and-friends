@@ -4,10 +4,10 @@ conference:
   url: 'http://friends.barcelona.pm/2018/'
   registration_open: true
   registration_url: 'https://goo.gl/forms/UYNZ8hna513bJekh1'
-  call_for_papers_open: true
+  call_for_papers_open: false
   call_for_papers_url: 'https://goo.gl/forms/n0oGOE0HuXd4aR4g1'
   talks_open: true
-  schedule_open: false
+  schedule_open: true
   finished: false
 
 venue:
@@ -20,8 +20,30 @@ venue:
     - name: '/bin'
 
 events:
+ - name: 'Registration'
+   time: 09:00
+   duration: 30
+ - name: 'Morning Break'
+   time: 11:00
+   duration: 30
+ - name: 'Lunch'
+   time: 13:00
+   duration: 90
+ - name: 'Afternoon Break'
+   time: 16:30
+   duration: 30
 
 talks:
+ - name: 'Opening'
+   time: 09:30
+   duration: 20
+   accepted: true
+   room: 0
+ - name: 'Lightning talks'
+   time: 18:30
+   duration: 20
+   accepted: true
+   room: 0
  - author: 'Javi Moreno'
    name: 'Cómo divertirte haciendo una buena charla técnica'
    slug: 'como-divertirte-haciendo-una-buena-charla-tecnica'
@@ -30,6 +52,8 @@ talks:
    icon: 'fa-microphone'
    duration: 50
    accepted: true
+   room: 0
+   time: 10:00
  - author: 'Oriol Arcas Abella'
    name: 'eBPF, the secret weapon of Linux'
    slug: 'ebpf-the-secret-weapon-of-linux'
@@ -38,6 +62,8 @@ talks:
    icon: 'fa-user-secret'
    duration: 20
    accepted: true
+   room: 0
+   time: 12:30
  - author: 'Diego Kuperman'
    name: 'Growing and refactoring our workforce'
    slug: 'growing-and-refactoring-our-workforce'
@@ -46,6 +72,8 @@ talks:
    icon: 'fa-shopping-cart'
    duration: 50
    accepted: true
+   room: 0
+   time: 14:30
  - author: 'Quim De la Cruz'
    name: 'Build a blockchain without fancy words'
    slug: 'build-a-blockchain-without-fancy-words'
@@ -54,6 +82,8 @@ talks:
    icon: 'fa-link'
    duration: 20
    accepted: true
+   room: 1
+   time: 12:00
  - author: 'Jordi Delgado'
    name: 'Les projeccions de Futamura'
    slug: 'les-projeccions-de-futamura'
@@ -62,6 +92,8 @@ talks:
    icon: 'fa-calendar-check-o'
    duration: 50
    accepted: true
+   room: 1
+   time: 17:00
  - author: 'Xavier Noria'
    name: 'The Phoenix Boot Process'
    slug: 'the-phoenix-boot-process'
@@ -70,6 +102,8 @@ talks:
    icon: 'fa-bolt'
    duration: 50
    accepted: true
+   room: 0
+   time: 15:30
  - author: 'vti'
    name: 'CPAN Audit'
    slug: 'cpan-audit'
@@ -78,6 +112,8 @@ talks:
    icon: 'fa-eye'
    duration: 20
    accepted: true
+   room: 1
+   time: 15:30
  - author: 'Alexander Salas Bastidas'
    name: 'Teclib Contributors Guides'
    slug: 'teclib-contributors-guides'
@@ -86,6 +122,8 @@ talks:
    icon: 'fa-users'
    duration: 20
    accepted: true
+   room: 1
+   time: 12:30
  - author: 'Jose Luis Pérez'
    name: 'Fruit pi as a hacking toolkit'
    slug: 'fruit-pi-as-a-hacking-toolkit'
@@ -94,6 +132,8 @@ talks:
    icon: 'fa-lemon-o'
    duration: 20
    accepted: true
+   room: 1
+   time: 16:00
  - author: 'Pablo Vigo'
    name: 'Projecte Linkat 2018'
    slug: 'projecte-linkat-2018'
@@ -102,6 +142,8 @@ talks:
    icon: 'fa-linux'
    duration: 20
    accepted: true
+   room: 1
+   time: 14:30
  - author: 'Jorge Dias'
    name: 'All your cluster are belong to us'
    slug: 'all-your-cluster-are-belong-to-us'
@@ -110,6 +152,8 @@ talks:
    icon: 'fa-space-shuttle'
    duration: 20
    accepted: true
+   room: 0
+   time: 18:00
  - author: 'Andreas Finger'
    name: 'Tricks for a simple(r) micro-service architecture'
    slug: 'tricks-for-a-simpler-micro-service-architecture'
@@ -118,6 +162,8 @@ talks:
    icon: 'fa-cubes'
    duration: 20
    accepted: true
+   room: 1
+   time: 15:00
  - author: 'Manuel Rivero'
    name: 'Retrofitting a legacy SPA to use a functional architecture'
    slug: 'retrofitting-a-legacy-spa-to-use-a-functional-architecture'
@@ -126,6 +172,8 @@ talks:
    icon: 'fa-refresh'
    duration: 50
    accepted: true
+   room: 0
+   time: 17:00
  - author: 'Jose Luis Martínez'
    name: 'Performance through lightweight'
    slug: 'performance-through-lightweight'
@@ -135,6 +183,8 @@ talks:
    icon: 'fa-car'
    duration: 20
    accepted: true
+   room: 0
+   time: 11:30
  - author: 'Francesc Guasch'
    name: 'Ravada: Free Virtual Desktops Manager'
    slug: 'ravada-free-vdi'
@@ -144,6 +194,8 @@ talks:
    icon: 'fa-desktop'
    duration: 20
    accepted: true
+   room: 1
+   time: 11:30
  - author: 'Marc Egea i Sala'
    name: 'The (git) stories we tell ourselves'
    slug: 'the-git-stories-we-tell-ourselves'
@@ -159,3 +211,5 @@ talks:
    icon: 'fa-code-fork'
    duration: 20
    accepted: true
+   room: 0
+   time: 12:00
