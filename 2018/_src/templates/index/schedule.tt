@@ -3,7 +3,7 @@
     <div class="inner">
       <header class="major">
         <h2>Schedule</h2>
-        [% IF conference.finished %]
+        [% IF conference.finished == 'true' %]
           <p>
             The schedule for the [% conference.name %] started at 9:30 and
             included 18 talks (4 of them were lightning talks). We finished
