@@ -213,3 +213,17 @@ talks:
    accepted: true
    room: 0
    time: 12:00
+ - author: 'Sílvia Mur'
+   name: 'APM? Slack App'
+   slug: 'apm-slack-app'
+   description: >
+      Born out of a section in a daily radio show in 1994, APM? (Alguna
+      pregunta més?) is the most successful comedy show on public Catalan
+      television station TV3. This is the story of how I took on the challenge
+      of building an app to post gifs from the show in my Slack team's
+      channels. And now you can too. Guaranteed laughs.
+   icon: 'fa-smile-o'
+   duration: 20
+   accepted: true
+   room: 1
+   time: 18:00
