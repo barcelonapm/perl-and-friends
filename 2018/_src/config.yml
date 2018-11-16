@@ -163,7 +163,7 @@ talks:
    duration: 20
    accepted: true
    room: 1
-   time: 15:00
+   time: 11:30
  - author: 'Manuel Rivero'
    name: 'Retrofitting a legacy SPA to use a functional architecture'
    slug: 'retrofitting-a-legacy-spa-to-use-a-functional-architecture'
@@ -195,7 +195,7 @@ talks:
    duration: 20
    accepted: true
    room: 1
-   time: 11:30
+   time: 15:00
  - author: 'Marc Egea i Sala'
    name: 'The (git) stories we tell ourselves'
    slug: 'the-git-stories-we-tell-ourselves'
