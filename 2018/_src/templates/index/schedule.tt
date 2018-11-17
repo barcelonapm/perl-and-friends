@@ -6,8 +6,8 @@
         [% IF conference.finished == 'true' %]
           <p>
             The schedule for the [% conference.name %] started at 9:30 and
-            included 18 talks (4 of them were lightning talks). We finished
-            at 19:00 after almost 10 hours of a great conference.
+            included 17 talks (and several lightning talks). We finished
+            at 19:15 after almost 10 hours of a great conference.
           </p>
         [% ELSE %]
           <p>
