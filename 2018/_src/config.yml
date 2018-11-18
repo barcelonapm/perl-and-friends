@@ -196,6 +196,7 @@ talks:
    accepted: true
    room: 1
    time: 15:00
+   url: https://ravada.upc.edu/
  - author: 'Marc Egea i Sala'
    name: 'The (git) stories we tell ourselves'
    slug: 'the-git-stories-we-tell-ourselves'
