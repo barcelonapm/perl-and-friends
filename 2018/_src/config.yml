@@ -214,6 +214,7 @@ talks:
    accepted: true
    room: 0
    time: 12:00
+   slides: https://meis.github.io/talks/perl-and-friends-2018/the-git-stories-we-tell-ourselves.pdf
  - author: 'Sílvia Mur'
    name: 'APM? Slack App'
    slug: 'apm-slack-app'
