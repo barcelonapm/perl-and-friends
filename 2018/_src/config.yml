@@ -64,6 +64,7 @@ talks:
    accepted: true
    room: 0
    time: 12:30
+   slides: https://docs.google.com/presentation/d/1CbzXthS8MJNNmJM1WAu4GbcuI4wCDJGsOrTlvb0DY34/
  - author: 'Diego Kuperman'
    name: 'Growing and refactoring our workforce'
    slug: 'growing-and-refactoring-our-workforce'
