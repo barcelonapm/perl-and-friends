@@ -64,6 +64,7 @@ talks:
    accepted: true
    room: 0
    time: 12:30
+   slides: https://docs.google.com/presentation/d/1CbzXthS8MJNNmJM1WAu4GbcuI4wCDJGsOrTlvb0DY34/
  - author: 'Diego Kuperman'
    name: 'Growing and refactoring our workforce'
    slug: 'growing-and-refactoring-our-workforce'
@@ -174,6 +175,7 @@ talks:
    accepted: true
    room: 0
    time: 17:00
+   slides: https://www.slideshare.net/ManuelRivero7/retrofitting-a-legacy-spa-to-use-a-functional-architecture-123270035
  - author: 'Jose Luis Martínez'
    name: 'Performance through lightweight'
    slug: 'performance-through-lightweight'
@@ -196,6 +198,7 @@ talks:
    accepted: true
    room: 1
    time: 15:00
+   url: https://ravada.upc.edu/
  - author: 'Marc Egea i Sala'
    name: 'The (git) stories we tell ourselves'
    slug: 'the-git-stories-we-tell-ourselves'
@@ -213,6 +216,7 @@ talks:
    accepted: true
    room: 0
    time: 12:00
+   slides: https://meis.github.io/talks/perl-and-friends-2018/the-git-stories-we-tell-ourselves.pdf
  - author: 'Sílvia Mur'
    name: 'APM? Slack App'
    slug: 'apm-slack-app'

@@ -50,8 +50,11 @@
 
               [% talk.description | html_para %]
 
+              [% IF talk.slides %]
+                <p><a href="[% talk.slides %]" target="_blank">View slides</a></p>
+              [% END %]
               [% IF talk.url %]
-                <a href="[% talk.url %]" target="_blank">[% talk.url %]</a>
+                <p><a href="[% talk.url %]" target="_blank">[% talk.url %]</a></p>
               [% END %]
             </li>
           [% END %]
