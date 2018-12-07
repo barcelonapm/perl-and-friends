@@ -54,6 +54,7 @@ talks:
    accepted: true
    room: 0
    time: 10:00
+   slides: http://cpsd.es/100-trucos
  - author: 'Oriol Arcas Abella'
    name: 'eBPF, the secret weapon of Linux'
    slug: 'ebpf-the-secret-weapon-of-linux'
