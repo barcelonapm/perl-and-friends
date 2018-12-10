@@ -106,6 +106,7 @@ talks:
    accepted: true
    room: 0
    time: 15:30
+   slides: http://share.hashref.com/the_phoenix_boot_process.pdf
  - author: 'vti'
    name: 'CPAN Audit'
    slug: 'cpan-audit'
