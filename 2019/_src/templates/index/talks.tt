@@ -1,0 +1,65 @@
+<section id="/talks" class="wrapper style3 special">
+  <div class="inner">
+    <header class="major">
+      <h2 id="/talks">Talks</h2>
+
+      [% IF conference.call_for_papers_open == 'true' %]
+        <p>
+          <a href="[% conference.call_for_papers_url %]" target="_blank">
+            Submit a talk!
+          </a>
+        </p>
+        <p>
+          We have some really good and experienced speakers already lined up
+          but we'd really <span class="hearth">♥</span> you to show up and tell
+          us your story. Don't feel shy, we're among friends.
+        </p>
+        <p>
+          You might think that you have nothing to talk about. Think twice.
+          What you take for granted might be unknown for others. If you think
+          that you don't have something to talk about for 20 to 50 minutes, you
+          can submit a Lightning Talk (talks limited to 5 minutes).
+          <a href="[% conference.call_for_papers_url %]" target="_blank">
+            Surprise us!
+          </a>
+        </p>
+      [% ELSIF conference.talks_open == 'true' %]
+        <p>
+          This is the list of talks for this edition. We're very proud of the
+          list of speakers and talks and we hope you'll enjoy them!
+        </p>
+      [% ELSE %]
+        <p>
+          We're working on our list of talks. Stay tuned!
+        </p>
+      [% END %]
+    </header>
+
+    [% IF conference.talks_open == 'true' %]
+      <ul id="talk-list" class="features">
+        [% FOREACH talk IN talks %]
+          [% IF talk.accepted == 'true' && talk.author %]
+            [% class = talk.cancelled == 'true' ? 'fa-ban cancelled' : talk.icon %]
+            <li class="icon [% class %]" id="/talks/[% talk.slug %]">
+              [% IF talk.cancelled == 'true' %]
+                <h2 class="warning">Cancelled</h2>
+              [% END %]
+
+              <h3>[% talk.name %]</h3>
+              <h4>[% talk.author %]</h4>
+
+              [% talk.description | html_para %]
+
+              [% IF talk.slides %]
+                <p><a href="[% talk.slides %]" target="_blank">View slides</a></p>
+              [% END %]
+              [% IF talk.url %]
+                <p><a href="[% talk.url %]" target="_blank">[% talk.url %]</a></p>
+              [% END %]
+            </li>
+          [% END %]
+        [% END %]
+      </ul>
+    [% END %]
+  </div>
+</section>

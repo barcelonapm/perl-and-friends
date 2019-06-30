@@ -1,0 +1,8 @@
+requires 'AnyEvent';
+requires 'AnyEvent::Loop';
+requires 'AnyEvent::Filesys::Notify';
+requires 'File::Basename';
+requires 'Template';
+requires 'YAML::Tiny';
+requires 'Sub::Identify';
+requires 'Linux::Inotify2';
