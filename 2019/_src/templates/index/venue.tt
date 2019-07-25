@@ -1,0 +1,45 @@
+[% IF venue.name %]
+  <section id="/venue" class="wrapper style2 special">
+    <div class="inner">
+      <header class="major">
+        <h2>Venue</h2>
+
+        <p>
+          [% IF conference.finished == 'true' %]
+            The conference took place at
+          [% ELSE %]
+            The conference will take place at
+          [% END %]
+          <a href="[% venue.url%]" target="_blank">[% venue.name %] </a>.
+        </p>
+
+        <div class="box alt">
+          <div class="row uniform 50%">
+            <div class="12u">
+              <span class="image fit">
+                <iframe
+                  src="[% venue.map_url %]"
+                  width="100%"
+                  height="400px"
+                  frameborder="0"
+                  style="border:0"
+                  allowfullscreen
+                ></iframe>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      [% IF venue.lunch_map_url %]
+        <h3>Where to eat?</h3>
+        <p>
+          Hey! Please note that lunch will not be provided and you'll have to go
+          find something outside. Don't worry, we have prepared a map with
+          recommended places to eat, around the venue:
+          <a href="[% venue.lunch_map_url %]" target="_blank">Have a look</a>
+        </p>
+      [% END %]
+    </div>
+  </section>
+[% END %]

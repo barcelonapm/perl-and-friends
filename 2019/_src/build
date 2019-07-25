@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ "$with_docker" == "please" ]; then
+  docker run --rm -ti \
+      -v $(pwd)/..:/work \
+      -w /work/_src \
+      -u $(id -u):$(id -g) \
+      -e 'HOME=/tmp/' \
+      meis/perl5-imagemagick ./build $*
+else
+  rm -rf ../index.html ../talks
+
+  export PERL5LIB=$(pwd)/local/lib/perl5:$PERL5LIB
+
+  cpanm --local-lib=$(pwd)/local -nq Carton
+  local/bin/carton install --deployment
+
+  $(pwd)/bin/build.pl $*
+fi
+
