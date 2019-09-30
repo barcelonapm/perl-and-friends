@@ -10,12 +10,11 @@ conference:
   schedule_open: false
   finished: false
 
-  #venue:
-  #name: 'CAPSiDE offices'
-  #url: 'https://capside.com'
-  #map_url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11973.793882743914!2d2.16937!3d41.386066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60a6240b19be359b!2sCAPSiDE!5e0!3m2!1sca!2ses!4v1473529872313'
-  #lunch_map_url: 'https://goo.gl/rECGRD'
-  #rooms:
-  #  - name: '/lib'
-  #  - name: '/bin'
-
+venue:
+  name: 'CAPSiDE offices'
+  url: 'https://capside.com'
+  map_url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11973.793882743914!2d2.16937!3d41.386066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60a6240b19be359b!2sCAPSiDE!5e0!3m2!1sca!2ses!4v1473529872313'
+  lunch_map_url: 'https://goo.gl/rECGRD'
+  rooms:
+    - name: '/lib'
+    - name: '/bin'
