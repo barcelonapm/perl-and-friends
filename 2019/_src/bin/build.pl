@@ -68,7 +68,7 @@ sub build_talk_ogg  {
     $author   = $vars->{talk}->{author};
     $title    = $vars->{talk}->{name};
     $timedate = $vars->{conference}->{date};
-    $image = Image::Magick->new(size=>'960x462',pointsize=>35,stroke=>'white',fill=>'white',weight => 'light');
+    $image = Image::Magick->new(size=>'960x462',pointsize=>45,stroke=>'white',fill=>'white',weight => 'light');
     $Wrap = sub {
     # This anonimous routine uses the current Image::Magick setings
     # to format an string in with a maximun len in pixels
@@ -109,38 +109,43 @@ sub build_talk_ogg  {
             $pos += $widths{$_};
             $pos = 0 if $newtext[-1] eq "\n";
        }
-    
+
        return join "", @newtext;
     };
     die "no trobo $root_dir/$base" unless -e "$root_dir/$base";
     my $x = $image->Read("$root_dir/$base");
     warn "($x)" if $x && !ref($x);
-    die   "can't read \"$root_dir/$base\"" if $x; 
-    $image->Annotate( text    =>$Wrap->($author,$image,620), #talk author,
-	              stroke  => 'yellow',
-                      x=>270,y=>68);
+    die   "can't read \"$root_dir/$base\"" if $x;
+    $image->Set( weight => 'bold'); #prepare for title
+    $image->Annotate(
+        text => $Wrap->($author, $image, 500), #talk author,
+        stroke => '#393536',
+        fill => '#F4E201',
+        x => 400,
+        y => 168,
+        pointsize => 50,
+    );
 
-    $image->Set( weight => 'Bold',); #prepare for title
-    $image->Annotate( text    => $Wrap->($title,$image,620),
-	              stroke  => 'yellow',
-                      x=>270,y=>123,);
+    $image->Set( weight => 'light',); #prepare for title
+    $image->Annotate(
+        text => $Wrap->($title, $image, 500), #talk author,
+        stroke => '#393536',
+        fill => '#F4E201',
+        x => 400,
+        y => 300,
+        pointsize => 45,
+    );
 
-    $image->Set( wheight => 'light' );
-    $image->Annotate( text    =>$timedate,
-                      stroke  => 'yellow',
-	              x=>585,y=> 442,
-       		      align   => 'Center',);
-          		      
-    $image->Draw( primitive   => 'line',
-                  strokewidth => 3, 
-                  stroke      => 'white',
-                  fill        => 'none',
-                  points      => '270,222,900,222',);
-    $image->Draw( primitive   => 'line',
-                  strokewidth => 3, 
-                  stroke      => 'white',
-                  fill        => 'none',
-                  points      => '270,402,900,402',);
+    $image->Set( weight => 'light',); #prepare for date
+    $image->Annotate(
+        text => $Wrap->($timedate, $image, 500),
+        fill => '#393536',
+        stroke => '#393536',
+        x => 665,
+        y => 450,
+        pointsize => 30,
+    );
+
     mkdir("$root_dir/$dest") unless -e "$root_dir/$dest";
     $image->Write("$root_dir/$dest/$id.png");
     undef $image;
