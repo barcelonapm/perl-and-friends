@@ -40,7 +40,7 @@ talks:
    name: "Tasty mojo bits"
    slug: 'tasy-mojo-bits'
    description: >
-     Last year I've talked about using the mojolicious distribution for everything but the web. This year I'll show some small exaples where I was able to solve problems with mojolicious web apps done in a range of a few hours to a few days.
+     Last year I've talked about using the mojolicious distribution for everything but the web. This year I'll show some small examples where I was able to solve problems with mojolicious web apps done in a range of a few hours to a few days.
    icon: 'fa-compress'
    duration: 50
    accepted: true
