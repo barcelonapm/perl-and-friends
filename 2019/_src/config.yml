@@ -44,3 +44,11 @@ talks:
    icon: 'fa-compress'
    duration: 50
    accepted: true
+ - author: 'Marc Egea i Sala'
+   name: 'This whole "JavaScript in the server" thing'
+   slug: 'this-whole-javascript-in-the-server-thing'
+   description: >
+     It's been around for a while, but recently I had difficulties answering the question of "What is Node.js?". In this talk, I'll try to explain what is Node and why is not only relevant, but quite fun. Asynchronous programming is key to understand the JavaScript hegemony, so we'll spend some time explaining the event loop. Other relevant topics will be V8, npm, async/await or transpilation.
+   icon: 'fa-spinner'
+   duration: 20
+   accepted: true
