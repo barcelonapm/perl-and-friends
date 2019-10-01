@@ -6,16 +6,49 @@ conference:
   registration_url: 'https://forms.gle/HuU1LiLSSeLd3Ry98'
   call_for_papers_open: true
   call_for_papers_url: 'https://forms.gle/ucoPg1ekxpcpxF569'
-  talks_open: false
+  talks_open: true
   schedule_open: false
   finished: false
 
-  #venue:
-  #name: 'CAPSiDE offices'
-  #url: 'https://capside.com'
-  #map_url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11973.793882743914!2d2.16937!3d41.386066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60a6240b19be359b!2sCAPSiDE!5e0!3m2!1sca!2ses!4v1473529872313'
-  #lunch_map_url: 'https://goo.gl/rECGRD'
-  #rooms:
-  #  - name: '/lib'
-  #  - name: '/bin'
+venue:
+  name: 'CAPSiDE offices'
+  url: 'https://capside.com'
+  map_url: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11973.793882743914!2d2.16937!3d41.386066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60a6240b19be359b!2sCAPSiDE!5e0!3m2!1sca!2ses!4v1473529872313'
+  lunch_map_url: 'https://goo.gl/rECGRD'
+  rooms:
+    - name: '/lib'
+    - name: '/bin'
 
+talks:
+ - author: 'Javi Moreno'
+   name: 'CICD para Perl con Azure Devops'
+   slug: 'cicd-parap-perl-con-azure-devops'
+   description: >
+     En poco más de media horita cogeremos una aplicación, construiremos su imagen docker, la subiremos a un repositorio y la desplegaremos (si pasa los tests) en staging. Tras una aprobación manual haremos lo propio en el entorno de producción. Y todo en Azure App Service con Azure DevOps. Si esto no te da morbo, yo ya no sé.
+   icon: 'fa-cloud-upload'
+   duration: 50
+   accepted: true
+ - author: 'Pau Cervera i Badia'
+   name: "Git: Don't lose your HEAD"
+   slug: 'git-dont-lose-your-head'
+   description: >
+     Git can be daunting, but we believe it's actually quite simple. The aim of this talk is to explore the simple data structures that git has had since it's inception (actually since it's first git commit!) and how they set the ground for the rich behaviour we are used to. But don't think this is an academic talk, it is not. It is more like a visual guide and command line experiment that we will perform together. All spiced with a little bit of genetics, but we promise you that not a single sheep will be damaged during the talk.
+   icon: 'fa-code-fork'
+   duration: 50
+   accepted: true
+ - author: 'Diego Kuperman'
+   name: "Tasty mojo bits"
+   slug: 'tasy-mojo-bits'
+   description: >
+     Last year I've talked about using the mojolicious distribution for everything but the web. This year I'll show some small examples where I was able to solve problems with mojolicious web apps done in a range of a few hours to a few days.
+   icon: 'fa-compress'
+   duration: 50
+   accepted: true
+ - author: 'Marc Egea i Sala'
+   name: 'This whole "JavaScript in the server" thing'
+   slug: 'this-whole-javascript-in-the-server-thing'
+   description: >
+     It's been around for a while, but recently I had difficulties answering the question of "What is Node.js?". In this talk, I'll try to explain what is Node and why is not only relevant, but quite fun. Asynchronous programming is key to understand the JavaScript hegemony, so we'll spend some time explaining the event loop. Other relevant topics will be V8, npm, async/await or transpilation.
+   icon: 'fa-spinner'
+   duration: 20
+   accepted: true
