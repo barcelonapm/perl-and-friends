@@ -22,7 +22,7 @@ venue:
 talks:
  - author: 'Javi Moreno'
    name: 'CICD para Perl con Azure Devops'
-   slug: 'cicd-parap-perl-con-azure-devops'
+   slug: 'cicd-para-perl-con-azure-devops'
    description: >
      En poco más de media horita cogeremos una aplicación, construiremos su imagen docker, la subiremos a un repositorio y la desplegaremos (si pasa los tests) en staging. Tras una aprobación manual haremos lo propio en el entorno de producción. Y todo en Azure App Service con Azure DevOps. Si esto no te da morbo, yo ya no sé.
    icon: 'fa-cloud-upload'
