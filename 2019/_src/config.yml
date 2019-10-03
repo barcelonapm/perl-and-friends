@@ -52,3 +52,11 @@ talks:
    icon: 'fa-spinner'
    duration: 20
    accepted: true
+ - author: 'Xavier Noria'
+   name: 'Zeitwerk: A new code loader for Ruby'
+   slug: 'zeitwerk-a-new-code-loader-for-ruby'
+   description: >
+     Zeitwerk is a new code loader for Ruby, providing autoloading, eager loading, and reloading. Zeitwerk has replaced the classic autoloader in Rails 6.
+   icon: 'fa-clock-o'
+   duration: 50
+   accepted: true
