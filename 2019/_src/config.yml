@@ -60,3 +60,11 @@ talks:
    icon: 'fa-clock-o'
    duration: 50
    accepted: true
+ - author: 'Jordi Massaguer Pla'
+   name: 'Working Remotely?'
+   slug: 'working-remotely'
+   description: >
+     Working from a paradise island, or while travelling around the globe... Not really! I've been working remotely for SUSE since 2011 and I would like to share my experience and see what is for real working remotely.
+   icon: 'fa-globe'
+   duration: 20
+   accepted: true
