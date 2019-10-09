@@ -68,3 +68,11 @@ talks:
    icon: 'fa-globe'
    duration: 20
    accepted: true
+ - author: 'Francesc Gil'
+   name: 'TerraCognita, from the Cloud to the ground.'
+   slug: 'terracognita-from-the-cloud-to-the-ground'
+   description: >
+     At Cycloid, Infrastructure As Code is in the company DNA since the beginning. To help our new customers adopting this best practice, we decided to build Terracognita to convert an existing infrastructure on AWS into Terraform code in an automated way, relying on Terraform providers built by the community. We focused on AWS for a first release, but Azure, GCP, Alibaba, Vmware and Openstack will be the next to be integrated. In order to do so, TerraCognita reads what you already have running on your existing infrastructure, and write the corresponding HCL and/or tfstate relying on the import mechanism of Terraform.
+   icon: 'fa-recycle'
+   duration: 20
+   accepted: true
