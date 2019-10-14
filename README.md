@@ -16,7 +16,7 @@ List of Events
 --------------
 
 The upcoming event is
-[Barcelona Perl & Friends 2018](http://friends.barcelona.pm/2018).
+[Barcelona Perl & Friends 2019](http://friends.barcelona.pm/2019).
 There's also a list of [past events](http://barcelona.pm/#events).
 
 Copyright & License
