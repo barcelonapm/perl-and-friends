@@ -76,3 +76,18 @@ talks:
    icon: 'fa-recycle'
    duration: 20
    accepted: true
+ - author: "Jluis"
+   name: "Raspberries' cluster"
+   slug: "raspberries-cluster"
+   description: "Desde que conoci el proyecto Beowulf siempre he querido montar un cluster pero cuando tenia acceso a maquinas para montarlo faltaba tiempo. Presentare el cluster que estoy montando con de 3 pi 4B y una 3. Los problemas a los que me he enfrentado y las soluciones que he adoptado. Tambien habra tiempo para Q&A y conectarse al cluster via wifi."
+   icon: 'fa-server'
+   duration: 50 minutes
+   accepted: true
+ - author: "Joaquim De la Cruz"
+   name: "Financial automation through an API"
+   slug: "financial-automation-through-an-api"
+   description: "At Flanks, we allow to automate any interaction that a user has with a bank. My talk is based on how to connect your bank accounts to any application using a PSD2 API. At this talk, we will see how to view your bank accounts with a telegram bot, automate emails to your banker or have Alexa notifications when they have charged you a bill. We want everyone to know how to put banks to work for them using an API."
+   icon: 'fa-bank'
+   duration: 20 minutes
+   accepted: true
+   language: "Spanish"
