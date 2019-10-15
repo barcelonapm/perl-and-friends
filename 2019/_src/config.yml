@@ -91,3 +91,11 @@ talks:
    duration: 20 minutes
    accepted: true
    language: "Spanish"
+ - author: "Julien Fiegehenn"
+   name: "Turning Humans into Developers with Perl"
+   slug: "turning-humans-into-developers-with-perl"
+   description: "In this talk I will explain my methodology for teaching apprentice software developers. I mainly use Perl, and often work with young trainees who start their professional careers with very little to no prior tech knowledge. I'll talk about the social aspects of being a mentor and show process examples that help with long-term motivation. "
+   icon: 'fa-graduation-cap'
+   duration: 20 minutes
+   accepted: true
+   language: "English"
