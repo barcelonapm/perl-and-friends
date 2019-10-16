@@ -99,3 +99,11 @@ talks:
    duration: 20 minutes
    accepted: true
    language: "English"
+ - author: "Ferenc Erki"
+   name: "Rex & Friends"
+   slug: "rex-and-friends"
+   description: "Rex is a friendly automation framework. As a maintainer I'm exposed to many interesting, or even unexpected use cases. I'd like to share some of my favorite ones with friends."
+   icon: 'fa-cogs'
+   duration: 20 minutes
+   accepted: true
+   language: "English"
