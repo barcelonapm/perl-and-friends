@@ -115,3 +115,19 @@ talks:
    duration: 20 minutes
    accepted: true
    language: "Spanish"
+ - author: "José Joaquín Atria"
+   name: "So you've been a bad developer"
+   slug: "so-youve-been-a-bad-developer"
+   description: "So you've been a bad developer, and uploaded some questionable modules to CPAN.  The good news is: we've all been there! Ask around, and chances are most CPAN authors will have released modules they are not happy with, or are plain bad ideas. There's no shame in this!  But what now? In this age of environmental awareness, how do we do our part to clean up the river of CPAN?  I'll talk about some things you can do to reduce your Bad-Code Footprint™ and help others along the way."
+   icon: 'fa-warning'
+   duration: 20 minutes
+   accepted: true
+   language: "English"
+ - author: "Jordi Delgado Pin"
+   name: "How I helped my son's teacher, or Backtracking with continuations (for dummies ;))"
+   slug: "how-i-helped-my-sons-teacher-or-backtracking-with-continuations-for-dummies"
+   description: "My first telegram bot was an automatic solver of a simple mathematical problem that my son had to solve every day when he was at the last course of primary school. But I wanted to generate all  possible solutions, thus I had to use backtracking. However, \"regular\" backtracking is easy and boring, so I decided to use a well known solution involving continuations, much more difficult and funny. All in Javascript."
+   icon: 'fa-anchor'
+   duration: 20 minutes
+   accepted: true
+   language: "Spanish"
