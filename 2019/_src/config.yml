@@ -107,3 +107,11 @@ talks:
    duration: 20 minutes
    accepted: true
    language: "English"
+ - author: "Fernando Verdugo"
+   name: "Dockers, KVM, VDI con Ravada"
+   slug: "dockers-kvm-vdi-con-ravada"
+   description: "Ravada es un proyecto opensource que orquestra escritorios virtuales. Vamos a desplegarlo con dockers de una forma rápida y sencilla.  El stack no puede ser más virtual, docker, KVM, VDI, quién da más?"
+   icon: 'fa-power-off'
+   duration: 20 minutes
+   accepted: true
+   language: "Spanish"
