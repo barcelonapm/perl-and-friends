@@ -74,41 +74,46 @@ sub build_talk_ogg  {
     # to format an string in with a maximun len in pixels
     #
         my ($text, $img, $maxwidth) = @_;
+	my $inc = $maxwidth *.05;
     
         # figure out the width of every character in the string
         #
         my %widths = map(($_ => ($img->QueryFontMetrics(text=>$_))[4]),
             keys %{{map(($_ => 1), split //, $text)}});
-        my ($pos,@newtext) = (0,);
-        for (split //, $text) {
-            # check to see if we're about to go out of bounds
-            if ($widths{$_} + $pos > $maxwidth) {
-                $pos = 0;
-                my @word;
-                # if we aren't already at the end of the word,
-                #  loop until we hit the beginning
-                if (       $newtext[-1] ne " "
-                        && $newtext[-1] ne "-"
-                        && $newtext[-1] ne "\n") {
-                    unshift @word, pop @newtext
+        my ($pos,$lines,@newtext) = (0,0,);
+	do {
+            ($lines,$lines,$maxwidth,@newtext) = (0,0,$inc+$maxwidth,) if $lines;
+            for (split //, $text) {
+                # check to see if we're about to go out of bounds
+                if ($widths{$_} + $pos > $maxwidth) {
+                   $pos = 0;
+                   my @word;
+                   # if we aren't already at the end of the word,
+                   #  loop until we hit the beginning
+                   if (       $newtext[-1] ne " "
+                           && $newtext[-1] ne "-"
+                           && $newtext[-1] ne "\n") {
+                        unshift @word, pop @newtext
                         while (   @newtext && $newtext[-1] ne " "
                                && $newtext[-1] ne "-"
                                && $newtext[-1] ne "\n")
-                }
+                   }
 
-                # if we hit the beginning of a line,
-                # we need to split a word in the middle
-                if ($newtext[-1] eq "\n" || @newtext == 0) {
-                    push @newtext, @word, "\n";
-                } else {
-                    push @newtext, "\n", @word;
-                    $pos += $widths{$_} for (@word);
+                   # if we hit the beginning of a line,
+                   # we need to split a word in the middle
+                   if ($newtext[-1] eq "\n" || @newtext == 0) {
+                       push @newtext, @word, "\n";
+		       $lines++
+                   } else {
+                       push @newtext, "\n", @word;
+                       $pos += $widths{$_} for (@word);
+                   }
                 }
+                push @newtext, $_;
+                $pos += $widths{$_};
+                $pos = 0 if $newtext[-1] eq "\n";
             }
-            push @newtext, $_;
-            $pos += $widths{$_};
-            $pos = 0 if $newtext[-1] eq "\n";
-       }
+	}until ($lines < 5);
 
        return join "", @newtext;
     };
