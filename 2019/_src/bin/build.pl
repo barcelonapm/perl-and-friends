@@ -140,7 +140,7 @@ sub build_talk_ogg  {
         y => 300,
         pointsize => 45,
     );
-
+   
     $image->Set( weight => 'light',); #prepare for date
     $image->Annotate(
         text => $Wrap->($timedate, $image, 500),
@@ -150,7 +150,12 @@ sub build_talk_ogg  {
         y => 450,
         pointsize => 30,
     );
-
+    for (my $i = 10; $i < 960;$i += 10 ) {$image->Draw(primitive=>'line',points=>"$i,226 $i,236")}
+    for (my $i = 10; $i < 462 - $i; $i += 10) {
+	    my $ii = 462 - $i;
+	    $image->Draw(primitive=>'line',points=>"475,$i 485,$i");
+	    $image->Draw(primitive=>'line',points=>"475,$ii 485,$ii")
+    } 		    
     mkdir("$root_dir/$dest") unless -e "$root_dir/$dest";
     $image->Write("$root_dir/$dest/$id.png");
     undef $image;
