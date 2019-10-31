@@ -64,10 +64,11 @@ sub build_talk_ogg  {
 # uses Image::Magick to create a talk card grafic
     my ($base,$vars,$dest) = @_;
     my ($id,$author,$title,$timedate,$image,$Wrap);
+    my @ROM = qw(lib bin);
     $id       = $vars->{talk}->{slug};
     $author   = $vars->{talk}->{author};
     $title    = $vars->{talk}->{name};
-    $timedate = $vars->{conference}->{date};
+    $timedate = $vars->{conference}->{date}." in /".$ROM[$vars->{talk}->{room}]." at ".$vars->{talk}->{time};
     $image = Image::Magick->new(size=>'960x462',pointsize=>35,stroke=>'white',fill=>'white',weight => 'light');
     $Wrap = sub {
     # This anonimous routine uses the current Image::Magick setings
