@@ -10,7 +10,7 @@
           [% ELSE %]
             The conference will take place at
           [% END %]
-          <a href="[% venue.url%]" target="_blank">[% venue.name %] </a>.
+          <a href="[% venue.url%]" target="_blank">[% venue.name %]</a>.
         </p>
 
         <div class="box alt">
