@@ -4,7 +4,7 @@ conference:
   url: 'http://friends.barcelona.pm/2019/'
   registration_open: true
   registration_url: 'https://forms.gle/HuU1LiLSSeLd3Ry98'
-  call_for_papers_open: true
+  call_for_papers_open: false
   call_for_papers_url: 'https://forms.gle/ucoPg1ekxpcpxF569'
   talks_open: true
   schedule_open: false
@@ -81,14 +81,14 @@ talks:
    slug: "raspberries-cluster"
    description: "Desde que conocí el proyecto Beowulf siempre he querido montar un clúster, pero cuando tenía acceso a máquinas para montarlo me faltaba tiempo. Presentaré el clúster que estoy montando con tres 4B y una 3B, los problemas a los que me he enfrentado y las soluciones que he adoptado. También habrá tiempo para Q&A y conectarse al clúster via wifi."
    icon: 'fa-server'
-   duration: 50 minutes
+   duration: 50
    accepted: true
  - author: "Joaquim De la Cruz"
    name: "Financial automation through an API"
    slug: "financial-automation-through-an-api"
    description: "At Flanks, we allow to automate any interaction that a user has with a bank. My talk is based on how to connect your bank accounts to any application using a PSD2 API. At this talk, we will see how to view your bank accounts with a telegram bot, automate emails to your banker or have Alexa notifications when they have charged you a bill. We want everyone to know how to put banks to work for them using an API."
    icon: 'fa-bank'
-   duration: 20 minutes
+   duration: 20
    accepted: true
    language: "Spanish"
  - author: "Julien Fiegehenn"
@@ -96,7 +96,7 @@ talks:
    slug: "turning-humans-into-developers-with-perl"
    description: "In this talk I will explain my methodology for teaching apprentice software developers. I mainly use Perl, and often work with young trainees who start their professional careers with very little to no prior tech knowledge. I'll talk about the social aspects of being a mentor and show process examples that help with long-term motivation."
    icon: 'fa-graduation-cap'
-   duration: 20 minutes
+   duration: 20
    accepted: true
    language: "English"
  - author: "Ferenc Erki"
@@ -104,7 +104,7 @@ talks:
    slug: "rex-and-friends"
    description: "Rex is a friendly automation framework. As a maintainer I'm exposed to many interesting, or even unexpected use cases. I'd like to share some of my favorite ones with friends."
    icon: 'fa-cogs'
-   duration: 20 minutes
+   duration: 20
    accepted: true
    language: "English"
  - author: "Fernando Verdugo"
@@ -112,7 +112,7 @@ talks:
    slug: "dockers-kvm-vdi-con-ravada"
    description: "Ravada es un proyecto opensource que orquesta escritorios virtuales. Vamos a desplegarlo con dockers de una forma rápida y sencilla.  El stack no puede ser más virtual, docker, KVM, VDI, ¿quién da más?"
    icon: 'fa-power-off'
-   duration: 20 minutes
+   duration: 20
    accepted: true
    language: "Spanish"
  - author: "José Joaquín Atria"
@@ -120,7 +120,7 @@ talks:
    slug: "so-youve-been-a-bad-developer"
    description: "So you've been a bad developer, and uploaded some questionable modules to CPAN.  The good news is: we've all been there! Ask around, and chances are most CPAN authors will have released modules they are not happy with, or are plain bad ideas. There's no shame in this!  But what now? In this age of environmental awareness, how do we do our part to clean up the river of CPAN?  I'll talk about some things you can do to reduce your Bad-Code Footprint™ and help others along the way."
    icon: 'fa-warning'
-   duration: 20 minutes
+   duration: 20
    accepted: true
    language: "English"
  - author: "Jordi Delgado Pin"
@@ -128,6 +128,22 @@ talks:
    slug: "how-i-helped-my-sons-teacher-or-backtracking-with-continuations-for-dummies"
    description: "My first telegram bot was an automatic solver of a simple mathematical problem that my son had to solve every day when he was at the last course of primary school. But I wanted to generate all possible solutions, thus I had to use backtracking. However, \"regular\" backtracking is easy and boring, so I decided to use a well known solution involving continuations, much more difficult and funny. All in Javascript."
    icon: 'fa-anchor'
-   duration: 20 minutes
+   duration: 20
    accepted: true
    language: "Spanish"
+ - author: "Jose Luis Martínez Torres"
+   name: "Flying high with your Kubernetes applications"
+   slug: "flying-high-with-your-kubernetes-applications"
+   description: "A guide of good practices of to how to build cloud applications"
+   icon: 'fa-plane'
+   duration: 50
+   accepted: true
+   language: "Spanish"
+ - author: "Alex Fernandez"
+   name: "Choose your own adventure: Rise and fall of a startup"
+   slug: "choose-your-own-adventure-rise-and-fall-of-a-startup"
+   description: "On demand talk about our startup's journey. From how we MVPed an idea and got investment to firing our colleagues. You choose the topic!"
+   icon: 'fa-sticky-note'
+   duration: 20
+   accepted: true
+   language: "English"
