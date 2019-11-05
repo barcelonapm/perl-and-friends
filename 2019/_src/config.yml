@@ -131,3 +131,11 @@ talks:
    duration: 20
    accepted: true
    language: "Spanish"
+ - author: "Jose Luis Martínez Torres"
+   name: "Flying high with your Kubernetes applications"
+   slug: "flying-high-with-your-kubernetes-applications"
+   description: "A guide of good practices of to how to build cloud applications"
+   icon: 'fa-plane'
+   duration: 50
+   accepted: true
+   language: "Spanish"
