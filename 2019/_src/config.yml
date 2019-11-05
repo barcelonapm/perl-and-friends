@@ -139,3 +139,11 @@ talks:
    duration: 50
    accepted: true
    language: "Spanish"
+ - author: "Alex Fernandez"
+   name: "Choose your own adventure: Rise and fall of a startup"
+   slug: "choose-your-own-adventure-rise-and-fall-of-a-startup"
+   description: "On demand talk about our startup's journey. From how we MVPed an idea and got investment to firing our colleagues. You choose the topic!"
+   icon: 'fa-sticky-note'
+   duration: 20
+   accepted: true
+   language: "English"
