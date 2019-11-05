@@ -24,7 +24,7 @@ talks:
    name: 'CICD para Perl con Azure Devops'
    slug: 'cicd-para-perl-con-azure-devops'
    description: >
-     En poco más de media horita cogeremos una aplicación, construiremos su imagen docker, la subiremos a un repositorio y la desplegaremos (si pasa los tests) en staging. Tras una aprobación manual haremos lo propio en el entorno de producción. Y todo en Azure App Service con Azure DevOps. Si esto no te da morbo, yo ya no sé.
+     En poco más de media horita cogeremos una aplicación, construiremos su imagen docker, la subiremos a un repositorio y la desplegaremos (si pasa los tests) en staging. Tras una aprobación manual haremos lo propio en el entorno de producción. Y todo en Azure App Service con Azure DevOps. Si ésto no te da morbo, yo ya no sé.
    icon: 'fa-cloud-upload'
    duration: 50
    accepted: true
@@ -32,7 +32,7 @@ talks:
    name: "Git: Don't lose your HEAD"
    slug: 'git-dont-lose-your-head'
    description: >
-     Git can be daunting, but we believe it's actually quite simple. The aim of this talk is to explore the simple data structures that git has had since it's inception (actually since it's first git commit!) and how they set the ground for the rich behaviour we are used to. But don't think this is an academic talk, it is not. It is more like a visual guide and command line experiment that we will perform together. All spiced with a little bit of genetics, but we promise you that not a single sheep will be damaged during the talk.
+     Git can be daunting, but we believe it's actually quite simple. The aim of this talk is to explore the simple data structures that git has had since its inception (actually since its first git commit!) and how they set the ground for the rich behaviour we are used to. But don't think this is an academic talk, it is not. It is more like a visual guide and command line experiment that we will perform together. All spiced with a little bit of genetics, but we promise you that not a single sheep will be damaged during the talk.
    icon: 'fa-code-fork'
    duration: 50
    accepted: true
@@ -40,7 +40,7 @@ talks:
    name: "Tasty mojo bits"
    slug: 'tasty-mojo-bits'
    description: >
-     Last year I've talked about using the mojolicious distribution for everything but the web. This year I'll show some small examples where I was able to solve problems with mojolicious web apps done in a range of a few hours to a few days.
+     Last year I talked about using the mojolicious distribution for everything but the web. This year I'll show some small examples where I was able to solve problems with mojolicious web apps done in a range of a few hours to a few days.
    icon: 'fa-compress'
    duration: 50
    accepted: true
@@ -79,7 +79,7 @@ talks:
  - author: "Jose Luis Perez Diez"
    name: "Raspberries' cluster"
    slug: "raspberries-cluster"
-   description: "Desde que conocí el proyecto Beowulf siempre he querido montar un clúster, pero cuando tenía acceso a máquinas para montarlo me faltaba tiempo. Presentaré el clúster que estoy montando con 3 4B y una 3B, los problemas a los que me he enfrentado y las soluciones que he adoptado. También habrá tiempo para Q&A y conectarse al clúster via wifi."
+   description: "Desde que conocí el proyecto Beowulf siempre he querido montar un clúster, pero cuando tenía acceso a máquinas para montarlo me faltaba tiempo. Presentaré el clúster que estoy montando con tres 4B y una 3B, los problemas a los que me he enfrentado y las soluciones que he adoptado. También habrá tiempo para Q&A y conectarse al clúster via wifi."
    icon: 'fa-server'
    duration: 50 minutes
    accepted: true
@@ -94,7 +94,7 @@ talks:
  - author: "Julien Fiegehenn"
    name: "Turning Humans into Developers with Perl"
    slug: "turning-humans-into-developers-with-perl"
-   description: "In this talk I will explain my methodology for teaching apprentice software developers. I mainly use Perl, and often work with young trainees who start their professional careers with very little to no prior tech knowledge. I'll talk about the social aspects of being a mentor and show process examples that help with long-term motivation. "
+   description: "In this talk I will explain my methodology for teaching apprentice software developers. I mainly use Perl, and often work with young trainees who start their professional careers with very little to no prior tech knowledge. I'll talk about the social aspects of being a mentor and show process examples that help with long-term motivation."
    icon: 'fa-graduation-cap'
    duration: 20 minutes
    accepted: true
@@ -110,7 +110,7 @@ talks:
  - author: "Fernando Verdugo"
    name: "Dockers, KVM, VDI con Ravada"
    slug: "dockers-kvm-vdi-con-ravada"
-   description: "Ravada es un proyecto opensource que orquestra escritorios virtuales. Vamos a desplegarlo con dockers de una forma rápida y sencilla.  El stack no puede ser más virtual, docker, KVM, VDI, quién da más?"
+   description: "Ravada es un proyecto opensource que orquesta escritorios virtuales. Vamos a desplegarlo con dockers de una forma rápida y sencilla.  El stack no puede ser más virtual, docker, KVM, VDI, ¿quién da más?"
    icon: 'fa-power-off'
    duration: 20 minutes
    accepted: true
@@ -126,7 +126,7 @@ talks:
  - author: "Jordi Delgado Pin"
    name: "How I helped my son's teacher, or Backtracking with continuations (for dummies ;))"
    slug: "how-i-helped-my-sons-teacher-or-backtracking-with-continuations-for-dummies"
-   description: "My first telegram bot was an automatic solver of a simple mathematical problem that my son had to solve every day when he was at the last course of primary school. But I wanted to generate all  possible solutions, thus I had to use backtracking. However, \"regular\" backtracking is easy and boring, so I decided to use a well known solution involving continuations, much more difficult and funny. All in Javascript."
+   description: "My first telegram bot was an automatic solver of a simple mathematical problem that my son had to solve every day when he was at the last course of primary school. But I wanted to generate all possible solutions, thus I had to use backtracking. However, \"regular\" backtracking is easy and boring, so I decided to use a well known solution involving continuations, much more difficult and funny. All in Javascript."
    icon: 'fa-anchor'
    duration: 20 minutes
    accepted: true
