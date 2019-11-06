@@ -22,7 +22,7 @@ There's also a list of [past events](http://barcelona.pm/#events).
 Copyright & License
 -------------------
 
-Copyright © 2017-2018 Barcelona Perl Mongers http://barcelona.pm/
+Copyright © 2017-2019 Barcelona Perl Mongers http://barcelona.pm/
 
 ```
 This program is free software; you can redistribute it and/or modify
