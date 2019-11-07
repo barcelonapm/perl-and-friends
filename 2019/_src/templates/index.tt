@@ -21,6 +21,7 @@
     <div id="page-wrapper">
       [% INCLUDE templates/index/banner.tt %]
       [% INCLUDE templates/index/presentation.tt %]
+      [% INCLUDE templates/index/preconf.tt %]
       [% INCLUDE templates/index/venue.tt %]
       [% INCLUDE templates/index/schedule.tt %]
       [% INCLUDE templates/index/talks.tt %]
