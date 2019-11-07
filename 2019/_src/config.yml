@@ -7,7 +7,7 @@ conference:
   call_for_papers_open: false
   call_for_papers_url: 'https://forms.gle/ucoPg1ekxpcpxF569'
   talks_open: true
-  schedule_open: false
+  schedule_open: true
   finished: false
 
 venue:
@@ -19,13 +19,39 @@ venue:
     - name: '/lib'
     - name: '/bin'
 
+events:
+ - name: 'Registration'
+   time: 09:00
+   duration: 30
+ - name: 'Morning Break'
+   time: 11:00
+   duration: 30
+ - name: 'Lunch'
+   time: 13:30
+   duration: 90
+ - name: 'Afternoon Break'
+   time: 16:30
+   duration: 30
+
 talks:
+ - name: 'Opening'
+   time: 09:30
+   duration: 20
+   accepted: true
+   room: 0
+ - name: 'Lightning talks'
+   time: 18:30
+   duration: 20
+   accepted: true
+   room: 0
  - author: 'Javi Moreno'
    name: 'CICD para Perl con Azure Devops'
    slug: 'cicd-para-perl-con-azure-devops'
    description: >
      En poco más de media horita cogeremos una aplicación, construiremos su imagen docker, la subiremos a un repositorio y la desplegaremos (si pasa los tests) en staging. Tras una aprobación manual haremos lo propio en el entorno de producción. Y todo en Azure App Service con Azure DevOps. Si ésto no te da morbo, yo ya no sé.
    icon: 'fa-cloud-upload'
+   time: 11:30
+   room: 0
    duration: 50
    accepted: true
  - author: 'Pau Cervera i Badia'
@@ -34,6 +60,8 @@ talks:
    description: >
      Git can be daunting, but we believe it's actually quite simple. The aim of this talk is to explore the simple data structures that git has had since its inception (actually since its first git commit!) and how they set the ground for the rich behaviour we are used to. But don't think this is an academic talk, it is not. It is more like a visual guide and command line experiment that we will perform together. All spiced with a little bit of genetics, but we promise you that not a single sheep will be damaged during the talk.
    icon: 'fa-code-fork'
+   time: 10:00
+   room: 1
    duration: 50
    accepted: true
  - author: 'Diego Kuperman'
@@ -42,6 +70,8 @@ talks:
    description: >
      Last year I talked about using the mojolicious distribution for everything but the web. This year I'll show some small examples where I was able to solve problems with mojolicious web apps done in a range of a few hours to a few days.
    icon: 'fa-compress'
+   time: 11:30
+   room: 1
    duration: 50
    accepted: true
  - author: 'Marc Egea i Sala'
@@ -50,6 +80,8 @@ talks:
    description: >
      It's been around for a while, but recently I had difficulties answering the question of “What is Node.js?”. In this talk, I'll try to explain what is Node and why is not only relevant, but quite fun. Asynchronous programming is key to understand the JavaScript hegemony, so we'll spend some time explaining the event loop. Other relevant topics will be V8, npm, async/await or transpilation.
    icon: 'fa-spinner'
+   time: 12:30
+   room: 0
    duration: 20
    accepted: true
  - author: 'Xavier Noria'
@@ -58,6 +90,8 @@ talks:
    description: >
      Zeitwerk is a new code loader for Ruby, providing autoloading, eager loading, and reloading. Zeitwerk has replaced the classic autoloader in Rails 6.
    icon: 'fa-clock-o'
+   time: 15:00
+   room: 0
    duration: 50
    accepted: true
  - author: 'Jordi Massaguer Pla'
@@ -66,6 +100,8 @@ talks:
    description: >
      Working from a paradise island, or while travelling around the globe... Not really! I've been working remotely for SUSE since 2011 and I would like to share my experience and see what is for real working remotely.
    icon: 'fa-globe'
+   time: 17:30
+   room: 0
    duration: 20
    accepted: true
  - author: 'Francesc Gil'
@@ -74,6 +110,8 @@ talks:
    description: >
      At Cycloid, Infrastructure As Code is in the company DNA since the beginning. To help our new customers adopting this best practice, we decided to build Terracognita to convert an existing infrastructure on AWS into Terraform code in an automated way, relying on Terraform providers built by the community. We focused on AWS for a first release, but Azure, GCP, Alibaba, Vmware and Openstack will be the next to be integrated. In order to do so, TerraCognita reads what you already have running on your existing infrastructure, and write the corresponding HCL and/or tfstate relying on the import mechanism of Terraform.
    icon: 'fa-recycle'
+   time: 16:00
+   room: 1
    duration: 20
    accepted: true
  - author: "Jose Luis Perez Diez"
@@ -81,6 +119,8 @@ talks:
    slug: "raspberries-cluster"
    description: "Desde que conocí el proyecto Beowulf siempre he querido montar un clúster, pero cuando tenía acceso a máquinas para montarlo me faltaba tiempo. Presentaré el clúster que estoy montando con tres 4B y una 3B, los problemas a los que me he enfrentado y las soluciones que he adoptado. También habrá tiempo para Q&A y conectarse al clúster via wifi."
    icon: 'fa-server'
+   time: 17:00
+   room: 1
    duration: 50
    accepted: true
  - author: "Joaquim De la Cruz"
@@ -88,6 +128,8 @@ talks:
    slug: "financial-automation-through-an-api"
    description: "At Flanks, we allow to automate any interaction that a user has with a bank. My talk is based on how to connect your bank accounts to any application using a PSD2 API. At this talk, we will see how to view your bank accounts with a telegram bot, automate emails to your banker or have Alexa notifications when they have charged you a bill. We want everyone to know how to put banks to work for them using an API."
    icon: 'fa-bank'
+   time: 13:00
+   room: 1
    duration: 20
    accepted: true
    language: "Spanish"
@@ -96,7 +138,9 @@ talks:
    slug: "turning-humans-into-developers-with-perl"
    description: "In this talk I will explain my methodology for teaching apprentice software developers. I mainly use Perl, and often work with young trainees who start their professional careers with very little to no prior tech knowledge. I'll talk about the social aspects of being a mentor and show process examples that help with long-term motivation."
    icon: 'fa-graduation-cap'
-   duration: 20
+   time: 15:00
+   room: 1
+   duration: 50
    accepted: true
    language: "English"
  - author: "Ferenc Erki"
@@ -104,6 +148,8 @@ talks:
    slug: "rex-and-friends"
    description: "Rex is a friendly automation framework. As a maintainer I'm exposed to many interesting, or even unexpected use cases. I'd like to share some of my favorite ones with friends."
    icon: 'fa-cogs'
+   time: 16:00
+   room: 0
    duration: 20
    accepted: true
    language: "English"
@@ -112,6 +158,8 @@ talks:
    slug: "dockers-kvm-vdi-con-ravada"
    description: "Ravada es un proyecto opensource que orquesta escritorios virtuales. Vamos a desplegarlo con dockers de una forma rápida y sencilla.  El stack no puede ser más virtual, docker, KVM, VDI, ¿quién da más?"
    icon: 'fa-power-off'
+   time: 12:30
+   room: 1
    duration: 20
    accepted: true
    language: "Spanish"
@@ -120,6 +168,8 @@ talks:
    slug: "so-youve-been-a-bad-developer"
    description: "So you've been a bad developer, and uploaded some questionable modules to CPAN.  The good news is: we've all been there! Ask around, and chances are most CPAN authors will have released modules they are not happy with, or are plain bad ideas. There's no shame in this!  But what now? In this age of environmental awareness, how do we do our part to clean up the river of CPAN?  I'll talk about some things you can do to reduce your Bad-Code Footprint™ and help others along the way."
    icon: 'fa-warning'
+   time: 17:00
+   room: 0
    duration: 20
    accepted: true
    language: "English"
@@ -128,6 +178,8 @@ talks:
    slug: "how-i-helped-my-sons-teacher-or-backtracking-with-continuations-for-dummies"
    description: "My first telegram bot was an automatic solver of a simple mathematical problem that my son had to solve every day when he was at the last course of primary school. But I wanted to generate all possible solutions, thus I had to use backtracking. However, \"regular\" backtracking is easy and boring, so I decided to use a well known solution involving continuations, much more difficult and funny. All in Javascript."
    icon: 'fa-anchor'
+   time: 18:00
+   room: 0
    duration: 20
    accepted: true
    language: "Spanish"
@@ -136,6 +188,8 @@ talks:
    slug: "flying-high-with-your-kubernetes-applications"
    description: "A guide of good practices of to how to build cloud applications"
    icon: 'fa-plane'
+   time: 10:00
+   room: 0
    duration: 50
    accepted: true
    language: "Spanish"
@@ -144,6 +198,8 @@ talks:
    slug: "choose-your-own-adventure-rise-and-fall-of-a-startup"
    description: "On demand talk about our startup's journey. From how we MVPed an idea and got investment to firing our colleagues. You choose the topic!"
    icon: 'fa-sticky-note'
+   time: 13:00
+   room: 0
    duration: 20
    accepted: true
    language: "English"
