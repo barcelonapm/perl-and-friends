@@ -2,13 +2,13 @@ conference:
   name: 'Barcelona Perl & Friends 2019'
   date: 'Saturday 9 Nov 2019'
   url: 'http://friends.barcelona.pm/2019/'
-  registration_open: true
+  registration_open: false
   registration_url: 'https://forms.gle/HuU1LiLSSeLd3Ry98'
   call_for_papers_open: false
   call_for_papers_url: 'https://forms.gle/ucoPg1ekxpcpxF569'
   talks_open: true
   schedule_open: true
-  finished: false
+  finished: true
 
 venue:
   name: 'CAPSiDE offices'
